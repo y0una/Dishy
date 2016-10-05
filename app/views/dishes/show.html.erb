@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= @dish.title %>
+</h1>
+<p>
+  <b>Category:</b>
+  <%= @dish.category.name %>
+</p>
+
+<p>
+  <b>Chef:</b>
+  <%= @dish.user.username %>
+</p>
+
+<p>
+  <b>Prep time:</b>
+  <%= @dish.prep_time %>
+</p>
+
+<p>
+  <b>Ingredients:</b>
+  <%= @dish.ingredients %>
+</p>
+
+<p>
+  <b>Directions:</b>
+  <%= @dish.directions %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_category_dish_path(@dish.category, @dish) %> |
+<%= link_to 'Back', category_dishes_path(@dish.category) %>
