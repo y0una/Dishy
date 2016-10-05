@@ -10,16 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20161005215017) do
-=======
-ActiveRecord::Schema.define(version: 20161005220551) do
->>>>>>> 0fe2d096e035a012c3350392611497a6ec9c3c43
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
   create_table "categories", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -29,16 +24,16 @@ ActiveRecord::Schema.define(version: 20161005220551) do
   create_table "dishes", force: :cascade do |t|
     t.integer  "category_id"
     t.string   "title"
+    t.integer  "user_id"
     t.integer  "prep_time"
     t.string   "ingredients"
     t.string   "directions"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["category_id"], name: "index_dishes_on_category_id", using: :btree
+    t.index ["user_id"], name: "index_dishes_on_user_id", using: :btree
   end
 
-  add_foreign_key "dishes", "categories"
-=======
   create_table "users", force: :cascade do |t|
     t.string   "username",               default: "", null: false
     t.string   "email",                  default: "", null: false
@@ -57,5 +52,6 @@ ActiveRecord::Schema.define(version: 20161005220551) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
->>>>>>> 0fe2d096e035a012c3350392611497a6ec9c3c43
+  add_foreign_key "dishes", "categories"
+  add_foreign_key "dishes", "users"
 end
