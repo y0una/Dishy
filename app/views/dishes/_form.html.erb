@@ -16,29 +16,17 @@
     <%= f.text_field :title %>
   </div>
 
-
-
-
-
-  <div class="field">
-    <%= f.label :user %><br />
-    <%= f.text_field :user %>
-  </div>
   <div class="field">
     <%= f.label :prep_time %><br />
     <%= f.number_field :prep_time %>
   </div>
   <div class="field">
     <%= f.label :ingredients %><br />
-    <%= f.text_field :ingredients %>
+    <%= f.text_area :ingredients %>
   </div>
   <div class="field">
     <%= f.label :directions %><br />
-    <%= f.text_field :directions %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br />
-    <%= f.text_field :category %>
+    <%= f.text_area :directions %>
   </div>
   <div class="actions">
     <%= f.submit %>

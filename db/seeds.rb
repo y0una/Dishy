@@ -6,11 +6,11 @@ Category.create(name:"Salads")
 Category.create(name:"Entree")
 Category.create(name:"Dessert")
 
-User.create(username:"Kimmy", email:"kim@kim.com", password:"kim")
-User.create(username:"Izzy", email:"iz@iz.com", password:"iz")
-User.create(username:"Younay", email:"yy@yy.com", password:"yy")
-User.create(username:"Hakimmy", email:"hk@hk.com", password:"hk")
-User.create(username:"Kenny", email:"kk@kk.com", password:"kk")
+User.create(username:"Kimmy", email:"kim@kim.com", password:"1111111")
+User.create(username:"Izzy", email:"iz@iz.com", password:"1111111")
+User.create(username:"Younay", email:"yy@yy.com", password:"1111111")
+User.create(username:"Hakimmy", email:"hk@hk.com", password:"11111111111111")
+User.create(username:"Kenny", email:"kk@kk.com", password:"1111111")
 
 
 15.times do
