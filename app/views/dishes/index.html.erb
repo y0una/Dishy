@@ -1,0 +1,33 @@
+<h1>Listing dishes</h1>
+
+<table>
+  <tr>
+    <th>title</th>
+    <th>User</th>
+    <th>Prep time</th>
+    <th>Ingredients</th>
+    <th>Directions</th>
+    <th>Category</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dishes.each do |dish| %>
+  <tr>
+    <td><%= dish.title %></td>
+    <td><%= dish.user %></td>
+    <td><%= dish.prep_time %></td>
+    <td><%= dish.ingredients %></td>
+    <td><%= dish.directions %></td>
+    <td><%= dish.category %></td>
+    <td><%= link_to 'Show', [dish.category, dish] %></td>
+    <td><%= link_to 'Edit', edit_category_dish_path(dish.category, dish) %></td>
+    <td><%= link_to 'Destroy', [dish.category, dish], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dish', new_category_dish_path(params[:category_id]) %>
