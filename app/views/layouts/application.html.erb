@@ -11,34 +11,22 @@
     <p class="alert"><%= alert %></p>
 
   <body>
-  <div class="container full-height">
-   <div id="nav-bar">
-     <div class="container">
-       <div class="row">
-         <div class="col-md-8 col-md-offset-2">
-         <div class="top-right gray">
-           <%unless current_user %>
-           <a class="top-bar-login" class="login-register" href = '/sessions/new'>Login</a>
-           <a class="top-bar-register" class="login-register" href = '/users/new'>Register</a>
-           <%else%>
+    <%= link_to "Home", root_path %>
 
-           <a class="top-bar" href="/">Home</a>
+   <%unless current_user %>
+   <%= link_to "Register", new_user_registration_path %>
+   <%= link_to "Login", new_user_session_path %>
+   <%else%>
 
-           <a class="top-bar" id="first-name" href="/users/<%=current_user.id%>"> <%=current_user.username%> </a>
 
-           <form class="top-bar" method="post" action="/logout">
-             <input type = "hidden" name="_method" value="delete">
-             <input  id="logout" type="submit" value="Logout">
-           </form>
+   <a class="top-bar" id="first-name" href="/users/<%=current_user.id%>"> <%=current_user.username%> </a>
 
-           <%end%>
-         </div>
-         </div>
-       </div>
-     </div>
+   <form class="top-bar" method="post" action="/logout">
+     <input type = "hidden" name="_method" value="delete">
+     <input  id="logout" type="submit" value="Logout">
+   </form>
 
-   </div>
-
+   <%end%>
     <%= yield %>
   </body>
 </html>
