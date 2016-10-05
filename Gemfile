@@ -26,7 +26,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'nested_scaffold'
-
+gem 'devise'
 gem 'simplecov', :require => false , :group => :test
 
 # Use Capistrano for deployment
