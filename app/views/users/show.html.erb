@@ -1,7 +1,14 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <h1>Hello, <%= current_user.username %>!!!</h1>
+      </h1>
+    </div>
+  </div>
+</div>
 
-# gravatar
-
-<h1>Hello, <%= current_user.username %>!!!</h1>
 
 # total votes/likes for ALL their recipes
 
@@ -10,6 +17,7 @@
 <h2>My Recipes</h2>
 <ul>
   <% @user.dishes.each do |dish| %>
-    <li><% dish.title %></li>
+  <!-- Put recipe votes in the li element adjacent to the dish link  -->
+    <li><%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
   <% end %>
 </ul>
