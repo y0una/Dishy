@@ -1,6 +1,7 @@
 <% if @results %>
-    <% @results.each do |result| %>
+    <% @results.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
     <p>
+      <%= pluralize(result.votes.count, "Vote") %> -
       <%= link_to result.title, category_dish_path(result.category, result) %>
     </p>
     <% end %>
