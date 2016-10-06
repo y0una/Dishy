@@ -6,7 +6,7 @@ class Dish < ApplicationRecord
 
   def self.search(search)
     if search
-      Dish.where('ingredients ILIKE ?', "%#{search}%")
+      Dish.where('ingredients ILIKE ? OR title ILIKE ?', "%#{search}%", "%#{search}%")
     end
   end
 end
