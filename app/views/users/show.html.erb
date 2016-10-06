@@ -10,6 +10,7 @@
 <h2>My Recipes</h2>
 <ul>
   <% @user.dishes.each do |dish| %>
-    <li><%= link_to dish.title, category_dish_path(dish) %></li>
+  <!-- Put recipe votes in the li element adjacent to the dish link  -->
+    <li><%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
   <% end %>
 </ul>
