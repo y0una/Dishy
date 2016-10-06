@@ -9,7 +9,7 @@
   </div>
 </div>
 
-<p><%= @user.username %> has submitted <%= @user.dishes.count %> dishes</p>
+<p><%= @user.username %> has submitted <%= pluralize(@user.dishes.count, "dish") %></p>
 <p><%= @user.username %>'s dishes have received <%= pluralize(@user.dishes.map(&:votes).flatten.count, "upvote") %></p>
 
 
@@ -19,8 +19,7 @@
 
 <h2>My Recipes</h2>
 <ul>
-  <% @user.dishes.each do |dish| %>
-  <!-- Put recipe votes in the li element adjacent to the dish link  -->
+  <% @user.dishes.sort_by{ |dish| dish.votes.count}.reverse.each do |dish| %>
     <li><%= pluralize(dish.votes.count, "Vote") %> - <%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
   <% end %>
 </ul>

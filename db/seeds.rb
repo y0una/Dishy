@@ -34,7 +34,9 @@ end
 
 
 Dish.all.each do |dish|
-  Vote.create(user_id:User.all.sample.id, dish_id:dish.id)
+  rand(10).times do
+    Vote.create(user_id:User.all.sample.id, dish_id:dish.id)
+  end
 end
 
 
