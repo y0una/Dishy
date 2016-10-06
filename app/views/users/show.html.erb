@@ -10,6 +10,6 @@
 <h2>My Recipes</h2>
 <ul>
   <% @user.dishes.each do |dish| %>
-    <li><% dish.title %></li>
+    <li><%= link_to dish.title, category_dish_path(dish) %></li>
   <% end %>
 </ul>
