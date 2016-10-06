@@ -6,7 +6,7 @@ class Dish < ApplicationRecord
 
   def self.search(search)
     if search
-      Dish.where('title LIKE ?', "%#{search}%")
+      Dish.where('title ILIKE ?', "%#{search}%")
     end
   end
 end

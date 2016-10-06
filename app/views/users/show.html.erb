@@ -12,8 +12,9 @@
 <p><%= @user.username %> has submitted <%= pluralize(@user.dishes.count, "dish") %></p>
 <p><%= @user.username %>'s dishes have received <%= pluralize(@user.dishes.map(&:votes).flatten.count, "upvote") %></p>
 
+
 <% if @user == current_user %>
-  <%= link_to "Edit profile", edit_user_path(current_user) %>
+  <%= link_to "Edit profile", edit_user_registration_path(current_user) %>
 <% end %>
 
 <h2>My Recipes</h2>
