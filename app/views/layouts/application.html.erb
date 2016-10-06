@@ -7,26 +7,22 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
 
   <body>
-    <%= link_to "Home", root_path %>
 
-   <%unless current_user %>
-   <%= link_to "Register", new_user_registration_path %>
-   <%= link_to "Login", new_user_session_path %>
-   <%else%>
-
-
-   <a class="top-bar" id="first-name" href="/users/<%=current_user.id%>"> <%=current_user.username%> </a>
-
-   <form class="top-bar" method="post" action="/logout">
-     <input type = "hidden" name="_method" value="delete">
-     <input  id="logout" type="submit" value="Logout">
-   </form>
-
-   <%end%>
+  <div class="nav-bar">
+  <%= link_to "Home", root_path %>
+     <%unless current_user %>
+       <%= link_to "Register", new_user_registration_path %>
+       <%= link_to "Login", new_user_session_path %>
+     <%else%>
+       <%= current_user.username %>
+       <%= link_to "Logout", destroy_user_session_path, method: "delete" %>
+     <%end%>
+   </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
   </body>
 </html>
