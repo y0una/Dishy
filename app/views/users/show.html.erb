@@ -1,7 +1,14 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <h1>Hello, <%= current_user.username %>!!!</h1>
+      </h1>
+    </div>
+  </div>
+</div>
 
-# gravatar
-
-<h1>Hello, <%= current_user.username %>!!!</h1>
 
 # total votes/likes for ALL their recipes
 
