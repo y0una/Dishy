@@ -3,6 +3,7 @@ class VotesController < ApplicationController
 
   def create
     @dish = Dish.find(params[:dish_id])
+
     Vote.find_or_create_by(dish_id: @dish.id, user_id: current_user.id)
     redirect_to :back
   end
