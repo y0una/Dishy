@@ -5,11 +5,9 @@
 <% end %>
 
 <% if @results %>
- <% if @results.size > 0 %>
     <% @results.each do |result| %>
     <p>
       <%= link_to result.title, category_dish_path(result.category, result) %>
     </p>
     <% end %>
-  <% end %>
 <% end %>
