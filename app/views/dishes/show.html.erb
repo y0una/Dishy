@@ -13,7 +13,7 @@
 
 <p>
   <b>Chef:</b>
-  <%= @dish.user.username %>
+  <%= link_to @dish.user.username, user_path(@dish.user) %>
 </p>
 
 <p>
