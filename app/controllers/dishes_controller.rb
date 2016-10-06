@@ -5,7 +5,7 @@ class DishesController < ApplicationController
 
   # GET categories/1/dishes
   def index
-    @dishes = @category.dishes
+    @dishes = @category.dishes.sort_by{ |dish| dish.votes.count }.reverse
   end
 
   # GET categories/1/dishes/1
