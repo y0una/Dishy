@@ -1,31 +1,16 @@
 <h1><%=@category.name%></h1>
+<%= link_to 'New Dish', new_category_dish_path(params[:category_id]) %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Chef</th>
-    <th>Prep time</th>
-    <th>Ingredients</th>
-    <th>Directions</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
 
 <% @dishes.each do |dish| %>
-  <tr>
-    <td><%= dish.title %></td>
-    <td><%= dish.user.username %></td>
-    <td><%= dish.prep_time %></td>
-    <td><%= dish.ingredients %></td>
-    <td><%= dish.directions %></td>
-    <td><%= link_to 'Show', [dish.category, dish] %></td>
-    <td><%= link_to 'Edit', edit_category_dish_path(dish.category, dish) %></td>
-    <td><%= link_to 'Destroy', [dish.category, dish], :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+    <h3><%= link_to dish.title, [dish.category, dish] %></h3>
+    <div>
+        <div>made by <%= link_to dish.user.username %></div>
+        <div>Time: <%= dish.prep_time %> minutes</div>
+    </div>
+
 <% end %>
-</table>
+
 
 <br />
 
-<%= link_to 'New Dish', new_category_dish_path(params[:category_id]) %>

@@ -29,6 +29,7 @@
 </p>
 
 
-
-<%= link_to 'Edit', edit_category_dish_path(@dish.category, @dish) %> |
-<%= link_to 'Back', category_dishes_path(@dish.category) %>
+<% if current_user == @dish.user %>
+  <%= link_to 'Edit', edit_category_dish_path(@dish.category, @dish) %> |
+  <%= link_to 'Back', category_dishes_path(@dish.category) %>
+<% end %>
