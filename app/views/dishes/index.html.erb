@@ -5,6 +5,7 @@
 <% @dishes.each do |dish| %>
     <h3><%= link_to dish.title, [dish.category, dish] %></h3>
     <div>
+    <%= render partial: "votes/vote", locals: { dish: dish } %>
     <div><%= pluralize(dish.votes.count, "Vote") %>
     </div>
         <div>made by <%= link_to dish.user.username, user_path(dish.user) %></div>

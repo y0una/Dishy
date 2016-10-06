@@ -8,6 +8,10 @@
 </h1>
 
 <p>
+  <%= render partial: "votes/vote", locals: { dish: @dish } %>
+</p>
+
+<p>
 <%=@dish.votes.count%> Votes
 </p>
 
