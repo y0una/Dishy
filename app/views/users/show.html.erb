@@ -1,0 +1,14 @@
+# gravatar
+
+<h1>Hello, <%= current_user.username %>!!!</h1>
+
+# total votes/likes for ALL their recipes
+
+<%= link_to "Edit profile", edit_user_path(current_user) %>
+
+<h2>My Recipes</h2>
+<ul>
+  <% @user.dishes.each do |dish| %>
+    <li><% dish.title %></li>
+  <% end %>
+</ul>
