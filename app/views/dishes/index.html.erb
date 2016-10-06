@@ -5,7 +5,7 @@
 <% @dishes.each do |dish| %>
     <h3><%= link_to dish.title, [dish.category, dish] %></h3>
     <div>
-        <div>made by <%= link_to dish.user.username %></div>
+        <div>made by <%= link_to dish.user.username, user_path(dish.user) %></div>
         <div>Time: <%= dish.prep_time %> minutes</div>
     </div>
 
