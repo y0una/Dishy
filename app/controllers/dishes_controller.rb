@@ -1,6 +1,7 @@
 class DishesController < ApplicationController
   before_action :set_dishes
   before_action :set_dish, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: [:new, :edit]
 
   # GET categories/1/dishes
   def index
@@ -13,7 +14,9 @@ class DishesController < ApplicationController
 
   # GET categories/1/dishes/new
   def new
-    @dish = @category.dishes.build
+    @dish = @category.dishes.new
+    @dish.user = current_user
+    @dish.save
   end
 
   # GET categories/1/dishes/1/edit

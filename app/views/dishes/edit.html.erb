@@ -2,5 +2,6 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', [@dish.category, @dish] %> |
-<%= link_to 'Back', category_dishes_path(@dish.category) %>
+<%= link_to 'Nevermind', [@dish.category, @dish] %>
+<%= link_to 'Delete', [@dish.category, @dish], :confirm => 'Are you sure?', :method => :delete %>
+
