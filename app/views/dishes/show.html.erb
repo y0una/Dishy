@@ -2,10 +2,14 @@
 
 
 
-<%= link_to @dish.category.name, category_dishes_path(@dish.category) %>
+<%= link_to "Back to #{@dish.category.name}", category_dishes_path(@dish.category) %>
 <h1>
   <%= @dish.title %>
 </h1>
+
+<p>
+  <%= render partial: "votes/vote", locals: { dish: @dish } %>
+</p>
 
 <p>
 <%=@dish.votes.count%> Votes

@@ -20,6 +20,7 @@
 <h2>My Recipes</h2>
 <ul>
   <% @user.dishes.sort_by{ |dish| dish.votes.count}.reverse.each do |dish| %>
+  <%= render partial: "votes/vote", locals: { dish: dish } %>
     <li><%= pluralize(dish.votes.count, "Vote") %> - <%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
   <% end %>
 </ul>
