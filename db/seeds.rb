@@ -1,10 +1,11 @@
-Category.destroy_all
+Vote.destroy_all
 Dish.destroy_all
+Category.destroy_all
 
 Category.create(name:"Appetizers")
 Category.create(name:"Salads")
-Category.create(name:"Entree")
-Category.create(name:"Dessert")
+Category.create(name:"Entrees")
+Category.create(name:"Desserts")
 
 User.create(username:"Kimmy", email:"kim@kim.com", password:"1111111")
 User.create(username:"Izzy", email:"iz@iz.com", password:"1111111")
@@ -30,6 +31,12 @@ User.create(username:"Kenny", email:"kk@kk.com", password:"1111111")
   dish.user = User.find_by(username:"Hakimmy")
   dish.save
 end
+
+
+Dish.all.each do |dish|
+  Vote.create(user_id:User.all.sample.id, dish_id:dish.id)
+end
+
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).

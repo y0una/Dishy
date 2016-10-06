@@ -3,21 +3,24 @@
     <div class="user_info">
       <h1>
         <%= gravatar_for @user %>
-        <h1>Hello, <%= current_user.username %>!!!</h1>
+        <h1><%= @user.username %></h1>
       </h1>
     </div>
   </div>
 </div>
 
+<p><%= @user.username %> has submitted <%= @user.dishes.count %> dishes</p>
+<p><%= @user.username %>'s dishes have received <%= pluralize(@user.dishes.map(&:votes).flatten.count, "upvote") %></p>
 
-# total votes/likes for ALL their recipes
 
-<%= link_to "Edit profile", edit_user_registration_path(current_user) %>
+<% if @user == current_user %>
+  <%= link_to "Edit profile", edit_user_registration_path(current_user) %>
+<% end %>
 
 <h2>My Recipes</h2>
 <ul>
   <% @user.dishes.each do |dish| %>
   <!-- Put recipe votes in the li element adjacent to the dish link  -->
-    <li><%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
+    <li><%= pluralize(dish.votes.count, "Vote") %> - <%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
   <% end %>
 </ul>

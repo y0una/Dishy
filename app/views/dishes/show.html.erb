@@ -1,13 +1,19 @@
 <p id="notice"><%= notice %></p>
 
+
+
 <%= link_to @dish.category.name, category_dishes_path(@dish.category) %>
 <h1>
   <%= @dish.title %>
 </h1>
 
 <p>
+<%=@dish.votes.count%> Votes
+</p>
+
+<p>
   <b>Chef:</b>
-  <%= @dish.user.username %>
+  <%= link_to @dish.user.username, user_path(@dish.user) %>
 </p>
 
 <p>
