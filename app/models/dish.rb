@@ -4,9 +4,7 @@ class Dish < ApplicationRecord
 
   def self.search(search)
     if search
-      find_by(:all, conditions: ['title LIKE ?', "%#{search}%"])
-    else
-      find(:all)
+      Dish.where('title LIKE ?', "%#{search}%")
     end
   end
 end

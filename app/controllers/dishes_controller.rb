@@ -53,6 +53,7 @@ class DishesController < ApplicationController
   def search
     Dish.search(params[:search])
     # @dishes = Dish.search(params[:search])
+    redirect_to category_dish_path
   end
 
   private
