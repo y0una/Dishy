@@ -9,8 +9,8 @@
   </div>
 </div>
 
-
-# total votes/likes for ALL their recipes
+<p><%= @user.username %> has submitted <%= @user.dishes.count %> dishes</p>
+<p><%= @user.username %>'s dishes have received <%= pluralize(@user.dishes.map(&:votes).flatten.count, "upvote") %></p>
 
 <% if @user == current_user %>
   <%= link_to "Edit profile", edit_user_path(current_user) %>
@@ -20,6 +20,6 @@
 <ul>
   <% @user.dishes.each do |dish| %>
   <!-- Put recipe votes in the li element adjacent to the dish link  -->
-    <li><%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
+    <li><%= pluralize(dish.votes.count, "Vote") %> - <%= link_to dish.title, category_dish_path(dish.category,dish) %></li>
   <% end %>
 </ul>
