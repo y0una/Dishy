@@ -1,8 +1,5 @@
 require 'rails_helper'
 describe "the register process", :type => :feature do
-  # before :each do
-  #   User.make(email: 'user@example.com', password: 'password')
-  # end
 
   it "registers a new user" do
     visit '/users/sign_up'
