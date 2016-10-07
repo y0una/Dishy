@@ -8,10 +8,10 @@ Category.create(name:"Entrees")
 Category.create(name:"Desserts")
 
 User.create(username:"Kimmy", email:"ineedgravatar@gmail.com", password:"1111111")
-User.create(username:"Izzy", email:"ineedgravatar@gmail.com", password:"1111111")
-User.create(username:"Younay", email:"ineedgravatar@gmail.com", password:"1111111")
-User.create(username:"Hakimmy", email:"ineedgravatar@gmail.com", password:"11111111111111")
-User.create(username:"Kenny", email:"ineedgravatar@gmail.com", password:"1111111")
+User.create(username:"Izzy", email:"aa@gmail.com", password:"1111111")
+User.create(username:"Younay", email:"bb@gmail.com", password:"1111111")
+User.create(username:"Hakimmy", email:"cc@gmail.com", password:"11111111111111")
+User.create(username:"Kenny", email:"dd@gmail.com", password:"1111111")
 
 
 15.times do
