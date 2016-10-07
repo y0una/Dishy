@@ -1,3 +1,101 @@
+/* line 1, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,15 +108,15 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+
  *= require_selfzzzzzzzzzzzzzz
  */
+
 
 body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Cormorant Garamond', serif;
-  padding-bottom: 5%;
 }
 
 body#sign-up {
@@ -37,18 +135,6 @@ body#single-category {
   background-image: url("/assets/02-single-category.png");
 }
 
-body#new-dish {
-  background-image: url("/assets/02-single-category.png")
-}
-
-body#edit-dish {
-  background-image: url("/assets/02-single-category.png")
-}
-
-body#dish-detail {
-  background-image: url("/assets/03-dish-detail.png");
-}
-
 .logo {
   text-align: center;
   margin-bottom: 6px;
@@ -61,7 +147,7 @@ body#dish-detail {
 }
 
 .back-link {
-  margin-left: 20%;
+  margin-left: 30.5%;
 }
 
 .back-link a {
@@ -90,7 +176,7 @@ body#dish-detail {
 }
 
 #search-container {
-  margin-left: 7.5%;
+  margin-left: 10%;
   text-align: right;
   display:inline-block;
   width:32%;
@@ -99,9 +185,9 @@ body#dish-detail {
 #search {
   height: 30px;
   border-radius: 100px;
-  width: 180px;
+  width: 170px;
   font-size: 12px;
-  padding-left: 18px;
+  padding-left: 13px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
   outline: none;
@@ -163,7 +249,7 @@ body#dish-detail {
 #directions-and-ingredients {
   padding-top: 6%;
   line-height: 2.5em;
-  margin-left: 20%;
+  margin-left: 30%;
 }
 
 .sub-header {
@@ -172,7 +258,7 @@ body#dish-detail {
 }
 
 #directions {
-  width:54%;
+  width:30%;
   font-size: 18px;
   display: inline-block;
 }
@@ -231,70 +317,31 @@ h4 {
   letter-spacing: 1px;
 }
 
-h5 {
-  font-size: 28px;
-  text-align: center;
-  padding-bottom: 20px;
-  margin: 0;
-  font-weight: 400;
-  padding-bottom: 45px;
-}
-
 .x-up-form {
   /*display: inline-block;*/
   margin: 0 auto;
   width: 50%;
-  padding-top: 10px;
-}
 
-.x-up-form .field .input-field{
-  font-size: 17px;
-  padding-left: 15px;
-}
-
-.field .remember {
-  padding-top: 12px;
-}
-
-.field#actions a {
-  color:#83A035;
-  text-decoration: none;
-  font-size: 16px;
 }
 
 .field {
-  height:37px;
-  width: 260px;
+  width: 35%;
   margin: 0 auto;
-  letter-spacing: .5px;
 }
 
 .field#actions {
   text-align: center;
-  margin-top: 45px;
-  font-size: 13px;
 }
 
 .input-field {
-  height:34px;
+  height:37px;
   width: 270px;
   border-radius: 2px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
   padding-left: 15px;
-  font-size: 28px;
+  font-size: 18px;
   font-family: 'Cormorant Garamond', serif;
-}
-
-.input-box {
-  height: 3em;
-  width: 95%;
-  padding-left: 3%;
-  font-size: 1em;
-}
-
-#prep-time {
-  height: 20px;
 }
 
 .dishes {
@@ -327,7 +374,6 @@ h5 {
   width: 70%;
   list-style: none;
   border-bottom: 15%;
-  padding-bottom: 10%;
 }
 
 .white-bg ul {
@@ -344,7 +390,6 @@ h5 {
 .login-title {
   font-size: 2em;
   padding-bottom: 1.5%;
-  padding-top: 30px;
 }
 
 #loginField {
@@ -366,35 +411,25 @@ h5 {
 }*/
 
 .input-field {
-  height: 2em;
+  height: 3em;
   width: 95%;
   padding-left: 3%;
   font-size: 1em;
 }
 
-.profile-wrapper {
-  text-align: center;
-}
-
 .profile {
   margin: auto;
-  display: inline-block;
+  width: 325px;
   overflow: hidden;
-}
-
-.profile-username {
-  margin-top: 5px;
 }
 
 .profile-pic {
   float: left;
-  padding-right: 30px;
-  text-align: left;
 }
 
 .profile-info {
   float: right;
-  text-align: left;
+  padding-top: 0px;
 }
 
 .profile-info-text {
@@ -412,79 +447,48 @@ h5 {
 
 .remember {
   display: inline-block;
-  color: #707A7B;
-}
-
-#submit-btn:hover {
- background-color:#819639;
 }
 
 #submit-btn {
-  height: 45px;
+  height: 2.75em;
   width: 100%;
   background-color: #83A035;
   color: white;
-  font-size: 18px;
-/*  font-size: 1.2em;*/
+  font-size: 1.2em;
   padding: 3%;
   border:none;
   border-radius: 2px;
   font-family: 'Cormorant Garamond', serif;
-  margin-bottom: 25px;
-  letter-spacing: .9px;
-  font-weight: lighter;
-}
-
-#submit-btn:hover {
-  background-color: #83CF35
 }
 
 #devise-sign-up {
   text-align: center;
-  color: #83A035;
-  padding-top: 15px;
-  margin-bottom: 15px;
+  color: #A4CB3F;
 }
 
 .devise-links {
   text-align: center;
   font-weight: bold;
-  color:#83A035;
+
 }
 
 .devise-links a {
   text-decoration: none;
   margin: 0 auto;
-  color: #83A035;
+  color: #A4CB3F;
   font-weight: 800;
   font-size: 1.2em;
 }
 
 .devise-links a:hover {
-  color:#6F8528 !important;
+  color:green !important;
 }
 
 .devise-forgot {
-  color: #83A035;
-  margin-top: 12px;
 }
 
 .devise-forgot:hover {
 
-}
-
-.alert {
-  text-align:center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size:18px;
-  margin-bottom: 50px;
-}
-
-.notice {
-  text-align:center;
-  font-family: 'Cormorant Garamond', serif;
-  font-size:18px;
-  margin-bottom: 50px;
 }
 
 a:hover {
