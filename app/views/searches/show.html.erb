@@ -1,38 +1,22 @@
-<% if @results.count != 0 %>
-   
-	<h1>Appetizers</h1>
-    <% @appetizers.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
-    <p>
-      <%= pluralize(result.votes.count, "Vote") %> -
-      <%= link_to result.title, category_dish_path(result.category, result) %>
-    </p>
-    <% end %>
+<h4> Search Results </h4>
 
-    <h1>Entrees</h1>
-     <% @entrees.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
-    <p>
-      <%= pluralize(result.votes.count, "Vote") %> -
-      <%= link_to result.title, category_dish_path(result.category, result) %>
-    </p>
-    <% end %>
+<div class="white-bg" id="profile-recipes">
+  <% if @results.count != 0 %>
+    <ul>
+      <% if @results %>
 
-    <h1>Salads</h1>
-     <% @salads.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
-    <p>
-      <%= pluralize(result.votes.count, "Vote") %> -
-      <%= link_to result.title, category_dish_path(result.category, result) %>
-    </p>
-    <% end %>
+          <% @results.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
+          <div class="dish-line">
+            <li>
+              <span class="vote-count" id="vote-count-<%= result.id %>"><%= result.votes.count %></span> <%= render partial: "votes/vote", locals: { dish: result } %>
+              <span class="dish-title"> <%= link_to result.title, category_dish_path(result.category, result) %> </span>
+            </li>
+          </div>
+        <% end %>
+      <% end %>
 
-    <h1>Desserts</h1>
-     <% @desserts.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
-    <p>
-      <%= pluralize(result.votes.count, "Vote") %> -
-      <%= link_to result.title, category_dish_path(result.category, result) %>
-    </p>
-
-    <% end %>
-
-<% else %>
-	<h1>No Results Found</h1>
-<% end %>
+    </ul>
+  <% else %>
+    <h1>No Results Found</h1>
+  <% end %>
+</div>
