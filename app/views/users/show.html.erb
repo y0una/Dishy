@@ -1,4 +1,4 @@
-<div class="user-info">
+<div class="profile">
   <div class="profile-pic">
     <%= gravatar_for @user %>
   </div>
@@ -18,7 +18,7 @@
 
 
   <% @user.dishes.sort_by{ |dish| dish.votes.count}.reverse.each do |dish| %>
-    <div class="white-bg">
+    <div class="white-bg user-dishes">
     <span id="vote-count-<%= dish.id %>"><%= pluralize(dish.votes.count, "Vote") %></span>
     <%= render partial: "votes/vote", locals: { dish: dish } %>
     <h3><%= link_to dish.title, category_dish_path(dish.category,dish) %></h3>
