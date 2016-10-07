@@ -1,3 +1,5 @@
+<body id="dish-detail">
+<div class="white-bg">
 <div class="back-link">
   <%= link_to "Back to #{@dish.category.name}", category_dishes_path(@dish.category) %>
 </div>
@@ -26,13 +28,11 @@
     <div class="sub-header">ingredients</b></div>
     <%= @dish.ingredients %>
   </div>
-
 </div>
-
-
-
 
 <% if current_user == @dish.user %>
   <%= link_to 'Edit', edit_category_dish_path(@dish.category, @dish) %>
   <%= link_to 'Back', category_dishes_path(@dish.category) %>
 <% end %>
+</div>
+</body>

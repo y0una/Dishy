@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Cormorant Garamond', serif;
+  padding-bottom: 5%;
 }
 
 body#sign-up {
@@ -36,6 +37,10 @@ body#single-category {
   background-image: url("/assets/02-single-category.png");
 }
 
+body#dish-detail {
+  background-image: url("/assets/03-dish-detail.png");
+}
+
 .logo {
   text-align: center;
   margin-bottom: 6px;
@@ -48,7 +53,7 @@ body#single-category {
 }
 
 .back-link {
-  margin-left: 30.5%;
+  margin-left: 20%;
 }
 
 .back-link a {
@@ -77,7 +82,7 @@ body#single-category {
 }
 
 #search-container {
-  margin-left: 10%;
+  margin-left: 7.5%;
   text-align: right;
   display:inline-block;
   width:32%;
@@ -86,9 +91,9 @@ body#single-category {
 #search {
   height: 30px;
   border-radius: 100px;
-  width: 170px;
+  width: 180px;
   font-size: 12px;
-  padding-left: 13px;
+  padding-left: 18px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
   outline: none;
@@ -150,7 +155,7 @@ body#single-category {
 #directions-and-ingredients {
   padding-top: 6%;
   line-height: 2.5em;
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .sub-header {
@@ -159,7 +164,7 @@ body#single-category {
 }
 
 #directions {
-  width:30%;
+  width:54%;
   font-size: 18px;
   display: inline-block;
 }
@@ -218,30 +223,58 @@ h4 {
   letter-spacing: 1px;
 }
 
+h5 {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+  font-weight: 400;
+  padding-bottom: 45px;
+}
+
 .x-up-form {
   /*display: inline-block;*/
   margin: 0 auto;
   width: 50%;
+  padding-top: 10px;
+}
 
+.x-up-form .field .input-field{
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+.field .remember {
+  padding-top: 12px;
+}
+
+.field#actions a {
+  color:#83A035;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .field {
-  width: 35%;
+  height:37px;
+  width: 260px;
   margin: 0 auto;
+  letter-spacing: .5px;
 }
 
 .field#actions {
   text-align: center;
+  margin-top: 45px;
+  font-size: 13px;
 }
 
 .input-field {
-  height:37px;
+  height:34px;
   width: 270px;
   border-radius: 2px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 28px;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -275,6 +308,7 @@ h4 {
   width: 70%;
   list-style: none;
   border-bottom: 15%;
+  padding-bottom: 10%;
 }
 
 .white-bg ul {
@@ -291,6 +325,7 @@ h4 {
 .login-title {
   font-size: 2em;
   padding-bottom: 1.5%;
+  padding-top: 30px;
 }
 
 #loginField {
@@ -312,25 +347,35 @@ h4 {
 }*/
 
 .input-field {
-  height: 3em;
+  height: 2em;
   width: 95%;
   padding-left: 3%;
   font-size: 1em;
 }
 
+.profile-wrapper {
+  text-align: center;
+}
+
 .profile {
   margin: auto;
-  width: 325px;
+  display: inline-block;
   overflow: hidden;
+}
+
+.profile-username {
+  margin-top: 5px;
 }
 
 .profile-pic {
   float: left;
+  padding-right: 30px;
+  text-align: left;
 }
 
 .profile-info {
   float: right;
-  padding-top: 0px;
+  text-align: left;
 }
 
 .profile-info-text {
@@ -348,48 +393,75 @@ h4 {
 
 .remember {
   display: inline-block;
+  color: #707A7B;
+}
+
+#submit-btn:hover {
+ background-color:#819639;
 }
 
 #submit-btn {
-  height: 2.75em;
+  height: 45px;
   width: 100%;
   background-color: #83A035;
   color: white;
-  font-size: 1.2em;
+  font-size: 18px;
+/*  font-size: 1.2em;*/
   padding: 3%;
   border:none;
   border-radius: 2px;
   font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 25px;
+  letter-spacing: .9px;
+  font-weight: lighter;
 }
 
 #devise-sign-up {
   text-align: center;
-  color: #A4CB3F;
+  color: #83A035;
+  padding-top: 15px;
+  margin-bottom: 15px;
 }
 
 .devise-links {
   text-align: center;
   font-weight: bold;
-
+  color:#83A035;
 }
 
 .devise-links a {
   text-decoration: none;
   margin: 0 auto;
-  color: #A4CB3F;
+  color: #83A035;
   font-weight: 800;
   font-size: 1.2em;
 }
 
 .devise-links a:hover {
-  color:green !important;
+  color:#6F8528 !important;
 }
 
 .devise-forgot {
+  color: #83A035;
+  margin-top: 12px;
 }
 
 .devise-forgot:hover {
 
+}
+
+.alert {
+  text-align:center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size:18px;
+  margin-bottom: 50px;
+}
+
+.notice {
+  text-align:center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size:18px;
+  margin-bottom: 50px;
 }
 
 a:hover {
