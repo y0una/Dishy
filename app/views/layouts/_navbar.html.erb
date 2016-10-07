@@ -1,12 +1,12 @@
 <div class="nav-bar">
 
-  <div id="search">
-   <%= form_tag("/searches/show", method: "get") do %>
-   <p>
-     <%= text_field_tag :search, params[:search], placeholder: "Search by ingredient or name of recipe.", size: 37 %>
-     <%= submit_tag "Search", name: nil %>
-   </p>
-   <% end %>
+  <div id="search-container">
+     <%= form_tag("/searches/show", method: "get") do %>
+     <p>
+      <%= text_field_tag :search, params[:search], placeholder: "Search ingredient or recipe", size: 37 %>
+       <%= submit_tag "Search", name: nil, class: "search-btn" %>
+     </p>
+     <% end %>
  </div>
 
  <div class="logo-and-text">
