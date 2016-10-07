@@ -28,11 +28,7 @@
     <div class="sub-header">ingredients</b></div>
     <%= @dish.ingredients %>
   </div>
-
 </div>
-
-
-
 
 <% if current_user == @dish.user %>
   <%= link_to 'Edit', edit_category_dish_path(@dish.category, @dish) %>

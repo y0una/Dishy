@@ -1,24 +1,39 @@
 <div class="profile">
   <div class="profile-pic">
-    <%= gravatar_for @user %>
+    <%= gravatar_for @user %><br>
+    <span class="profile-info-text">
+      <% if @user == current_user %>
+        <%= link_to "Edit profile", edit_user_registration_path(current_user) %>
+      <% end %>
+    </span>
   </div>
   <div class="profile-info">
     <h1><%= @user.username %></h1>
-    <% if @user == current_user %>
-      <%= link_to "Edit profile", edit_user_registration_path(current_user) %>
-    <% end %>
-    <%= pluralize(@user.dishes.count, "submitted dish") %><br>
-    <%= pluralize(@user.dishes.map(&:votes).flatten.count, "total upvote") %>
+    <span class="profile-info-text">
+      <%= pluralize(@user.dishes.count, "submitted dish") %><br>
+      <%= pluralize(@user.dishes.map(&:votes).flatten.count, "total upvote") %>
+    </span>
   </div>
 </div>
 
-
+<div class="white-bg" id="profile-recipes">
+<ul>
   <% @user.dishes.sort_by{ |dish| dish.votes.count}.reverse.each do |dish| %>
-    <div class="white-bg user-dishes">
-    <span class="vote-count" id="vote-count-<%= dish.id %>"><%= dish.votes.count %></span>
-    <%= render partial: "votes/vote", locals: { dish: dish } %>
-    <h3><%= link_to dish.title, category_dish_path(dish.category,dish) %></h3>
-    <%= dish.prep_time %> minutes
+    <div class="dish-line">
+      <div>
+        <li>
+          <span class="vote-count" id="vote-count-<%= dish.id %>"><%= dish.votes.count %></span> <%= render partial: "votes/vote", locals: { dish: dish } %> <span class="dish-title"> <%= link_to dish.title, category_dish_path(dish.category, dish) %> </span>
+        </li>
+      </div>
+
+      <li>
+        <div class="chef-duration-left">
+          <%= dish.prep_time %> minutes
+        </div>
+      </li>
     </div>
   <% end %>
-</ul>
+  </ul>
+</div>
+
+

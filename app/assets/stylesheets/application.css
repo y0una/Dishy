@@ -30,7 +30,7 @@ body#log-in {
 }
 
 body#home {
-  background-image: url("/assets/01-menu.png");
+  background-image: url("/assets/01-menu-long.png");
 }
 
 body#single-category {
@@ -227,7 +227,7 @@ h4 {
   /*display: inline-block;*/
   margin: 0 auto;
   width: 50%;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 /*.x-up-form::placeholder{
@@ -240,13 +240,15 @@ h4 {
 }
 
 .field {
-  width: 35%;
+  width: 260px;
   margin: 0 auto;
+  letter-spacing: .5px;
 }
 
 .field#actions {
   text-align: center;
   margin-top: 45px;
+  font-size: 13px;
 }
 
 .input-field {
@@ -307,6 +309,7 @@ h4 {
 .login-title {
   font-size: 2em;
   padding-bottom: 1.5%;
+  padding-top: 30px;
 }
 
 #loginField {
@@ -349,8 +352,13 @@ h4 {
   padding-top: 0px;
 }
 
-.user-dishes {
-  text-align: center;
+.profile-info-text {
+  font-size : 1.2em;
+  line-height: 2;
+}
+
+#profile-recipes {
+  padding-top: 0px;
 }
 
 .chef-duration-left {
@@ -359,6 +367,7 @@ h4 {
 
 .remember {
   display: inline-block;
+  color: #707A7B;
 }
 
 #submit-btn {
@@ -408,4 +417,9 @@ h4 {
   font-family: 'Cormorant Garamond', serif;
   font-size:18px;
   margin-bottom: 50px;
+}
+
+a:hover {
+  background-color: transparent;
+  color:#83A035;
 }
