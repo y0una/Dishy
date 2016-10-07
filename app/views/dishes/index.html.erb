@@ -1,33 +1,35 @@
 <!-- SINGLE CATEGORY ALL DISHES -->
-<div class="white-bg">
+<body id="single-category">
+  <div class="white-bg">
 
-  <h2><%=@category.name%></h2>
-  <div class="add-dish">
-   <%= link_to '+ Add a Dish', new_category_dish_path(params[:category_id]) %>
-  </div>
-  <div>
-    <ul>
-    <% @dishes.each do |dish| %>
-      <div class="dish-line">
-        <div >
+    <h2><%=@category.name%></h2>
+    <div class="add-dish">
+     <%= link_to '+ Add a Dish', new_category_dish_path(params[:category_id]) %>
+    </div>
+    <div>
+      <ul>
+      <% @dishes.each do |dish| %>
+        <div class="dish-line">
+          <div >
+            <li>
+
+              <span class="vote-count" id="vote-count-<%= dish.id %>"><%= dish.votes.count %></span> <%= render partial: "votes/vote", locals: { dish: dish } %> <span class="dish-title"><%= link_to dish.title, [dish.category, dish] %> </span>
+            </li>
+          </div>
+
           <li>
-
-            <span class="vote-count" id="vote-count-<%= dish.id %>"><%= dish.votes.count %></span> <%= render partial: "votes/vote", locals: { dish: dish } %> <span class="dish-title"><%= link_to dish.title, [dish.category, dish] %> </span>
+            <div class="chef-duration-left">
+              Chef <%= link_to dish.user.username, user_path(dish.user) %> /
+              <%= dish.prep_time %> minutes
+            </div>
           </li>
+
         </div>
 
-        <li>
-          <div class="chef-duration-left">
-            Chef <%= link_to dish.user.username, user_path(dish.user) %> /
-            <%= dish.prep_time %> minutes
-          </div>
-        </li>
-
-      </div>
-
-      <% end %>
-    </ul>
+        <% end %>
+      </ul>
+    </div>
+        <br />
+    </div>
   </div>
-      <br />
-  </div>
-</div>
+</body>

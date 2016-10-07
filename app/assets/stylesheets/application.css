@@ -15,10 +15,25 @@
  */
 
 body {
-  background-image: url("/assets/01-menu.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Cormorant Garamond', serif;
+}
+
+body#sign-up {
+  background-image: url("/assets/00-login.png");
+}
+
+body#log-in {
+  background-image: url("/assets/00-login.png");
+}
+
+body#home {
+  background-image: url("/assets/01-menu.png");
+}
+
+body#single-category {
+  background-image: url("/assets/02-single-category.png");
 }
 
 .logo {
@@ -196,6 +211,19 @@ h4 {
   text-align: center;
   letter-spacing: 1px;
 }
+
+.x-up-form {
+  /*display: inline-block;*/
+  margin: 0 auto;
+  width: 50%;
+  padding-left: 30%;
+}
+
+.field {
+
+  margin: 0 auto;
+}
+
 
 .dishes {
   margin: 0 auto;
