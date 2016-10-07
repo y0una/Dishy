@@ -11,5 +11,108 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require_self
+ *= require_selfzzzzzzzzzzzzzz
  */
+
+body {
+  background-image: url("/assets/01-menu.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.logo-and-text {
+  padding-bottom: 28px;
+  display: inline-block;
+  width:20%;
+}
+
+#links {
+  /*float: right;*/
+  text-align: left;
+  padding-left: 125px;
+  display:inline-block;
+  width: 30%;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#links a {
+  text-decoration: none;
+  padding-left:18px;
+}
+
+#search {
+  padding-left: 80px;
+  text-align: right;
+  display:inline-block;
+  width:35%;
+}
+
+h2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  font-color:#303E48;
+  text-align: center;
+}
+
+h2 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  font-color:#303E48;
+}
+
+h3 a {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 35px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dishes {
+
+  margin: 0 auto;
+}
+
+
+.white-bg {
+  border-top: 25px;
+  background-color: white;
+  /*position: absolute;*/
+  top: 150px;
+/*  left: 100;
+  right: 100;*/
+  background: rgba(255, 255, 255, .5);
+  padding-top: 7%;
+  margin: auto;
+  width: 50%;
+  list-style: none;
+
+}
+
+.white-bg ul {
+  list-style: none;
+}
+
+.white-bg ul li{
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  line-height: 1.8em;
+  padding-right: 30px;
+}
+
+
+
+
