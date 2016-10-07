@@ -5,7 +5,7 @@
   <ul>
     <% category.dishes.sort_by{ |dish| dish.votes.count }.reverse[0..4].each do |dish| %>
       <li><%= render partial: "votes/vote", locals: { dish: dish } %></li>
-      <li><%= pluralize(dish.votes.count, "Vote") %> - <%= link_to dish.title, category_dish_path(category, dish) %></li>
+      <li><span id="vote-count-<%= dish.id %>"><%= pluralize(dish.votes.count, "Vote") %></span> - <%= link_to dish.title, category_dish_path(category, dish) %></li>
     <% end %>
   </ul>
 <% end %>
