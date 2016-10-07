@@ -13,14 +13,16 @@ describe "logging a user in and upvoting a recipe", type: :feature do
   it "Upvotes a recipe" do
     visit "/"
     within(".white-bg") do
-        click_link "Upvote", visible: false, href: "/dishes/33/votes"
+        click_link "Vote", visible: false, href: "/dishes/33/votes"
+        reload_page
         expect(page).to have_content "Appetizers Upvote 8 Votes - Soko radicchio bunya nuts"
     end
   end
   it "Doesnt change the upvote twice" do
     visit "/"
     within(".white-bg") do
-      click_link "Upvote", visible: false, href: "/dishes/33/votes"
+      click_link "Vote", visible: false, href: "/dishes/33/votes"
+      reload_page
       expect(page).to have_content "Appetizers Upvote 8 Votes - Soko radicchio bunya nuts"
     end
   end
