@@ -629,6 +629,35 @@
         null,
         null
       ],
+      "/Users/apprentice/Documents/Dishy/spec/features/voting_spec.rb": [
+        1,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/apprentice/Documents/Dishy/app/controllers/application_controller.rb": [
         1,
         1,
@@ -637,19 +666,39 @@
         1,
         null,
         1,
-        4,
-        4,
+        8,
+        8,
         null,
         null
       ],
       "/Users/apprentice/Documents/Dishy/app/controllers/categories_controller.rb": [
         1,
         1,
-        2,
+        8,
         null,
         null
       ],
       "/Users/apprentice/Documents/Dishy/app/models/category.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/apprentice/Documents/Dishy/app/models/dish.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/apprentice/Documents/Dishy/app/models/vote.rb": [
+        1,
         1,
         1,
         null
@@ -662,8 +711,20 @@
         0,
         null,
         null
+      ],
+      "/Users/apprentice/Documents/Dishy/app/controllers/votes_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        2,
+        2,
+        null,
+        null
       ]
     },
-    "timestamp": 1475795501
+    "timestamp": 1475799257
   }
 }
