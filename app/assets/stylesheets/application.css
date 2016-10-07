@@ -333,6 +333,11 @@ h4 {
   padding-top: 0px;
 }
 
+.profile-info-text {
+  font-size : 1.2em;
+  line-height: 2;
+}
+
 #profile-recipes {
   padding-top: 0px;
 }
