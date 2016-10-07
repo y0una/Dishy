@@ -36,6 +36,10 @@ body#single-category {
   background-image: url("/assets/02-single-category.png");
 }
 
+body#new-dish {
+  background-image: url("/assets/02-single-category.png")
+}
+
 .logo {
   text-align: center;
   margin-bottom: 6px;
@@ -222,7 +226,6 @@ h4 {
   /*display: inline-block;*/
   margin: 0 auto;
   width: 50%;
-
 }
 
 .field {
@@ -240,9 +243,20 @@ h4 {
   border-radius: 2px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
-  padding-left: 15px;
+  padding: 5%;
   font-size: 18px;
   font-family: 'Cormorant Garamond', serif;
+}
+
+.input-box {
+  height: 3em;
+  width: 95%;
+  padding-left: 3%;
+  font-size: 1em;
+}
+
+#prep-time {
+  height: 20px;
 }
 
 .dishes {
@@ -311,12 +325,6 @@ h4 {
   height: 60px;
 }*/
 
-.input-field {
-  height: 3em;
-  width: 95%;
-  padding-left: 3%;
-  font-size: 1em;
-}
 
 .profile {
   margin: auto;
