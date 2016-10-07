@@ -1,3 +1,101 @@
+/* line 1, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/user/Documents/workspace/dbc/phase_3/Dishy/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -10,9 +108,10 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+
  *= require_selfzzzzzzzzzzzzzz
  */
+
 
 body {
   background-repeat: no-repeat;
@@ -34,10 +133,6 @@ body#home {
 
 body#single-category {
   background-image: url("/assets/02-single-category.png");
-}
-
-body#new-dish {
-  background-image: url("/assets/02-single-category.png")
 }
 
 .logo {
@@ -226,6 +321,7 @@ h4 {
   /*display: inline-block;*/
   margin: 0 auto;
   width: 50%;
+
 }
 
 .field {
@@ -243,20 +339,9 @@ h4 {
   border-radius: 2px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
-  padding: 5%;
+  padding-left: 15px;
   font-size: 18px;
   font-family: 'Cormorant Garamond', serif;
-}
-
-.input-box {
-  height: 3em;
-  width: 95%;
-  padding-left: 3%;
-  font-size: 1em;
-}
-
-#prep-time {
-  height: 20px;
 }
 
 .dishes {
@@ -325,30 +410,26 @@ h4 {
   height: 60px;
 }*/
 
-
-.profile-wrapper {
-  text-align: center;
+.input-field {
+  height: 3em;
+  width: 95%;
+  padding-left: 3%;
+  font-size: 1em;
 }
 
 .profile {
   margin: auto;
-  display: inline-block;
+  width: 325px;
   overflow: hidden;
-}
-
-.profile-username {
-  margin-top: 5px;
 }
 
 .profile-pic {
   float: left;
-  padding-right: 30px;
-  text-align: left;
 }
 
 .profile-info {
   float: right;
-  text-align: left;
+  padding-top: 0px;
 }
 
 .profile-info-text {
@@ -378,10 +459,6 @@ h4 {
   border:none;
   border-radius: 2px;
   font-family: 'Cormorant Garamond', serif;
-}
-
-#submit-btn:hover {
-  background-color: #83CF35
 }
 
 #devise-sign-up {
