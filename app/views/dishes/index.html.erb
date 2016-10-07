@@ -1,8 +1,11 @@
 <div class="white-bg">
+
+  <h2><%=@category.name%></h2>
+  <div class="add-dish">
+  <%= link_to '+ Add a Dish', new_category_dish_path(params[:category_id]) %>
+  </div>
   <div class="dishes">
-    <h2><%=@category.name%></h2>
-    <%= link_to 'New Dish', new_category_dish_path(params[:category_id]) %>
-      <% @dishes.each do |dish| %>
+    <% @dishes.each do |dish| %>
         <h3><%= link_to dish.title, [dish.category, dish] %></h3>
         <div>
           <%= render partial: "votes/vote", locals: { dish: dish } %>
@@ -16,6 +19,7 @@
           </div>
         </div>
       <% end %>
+  </div>
       <br />
   </div>
 </div>
