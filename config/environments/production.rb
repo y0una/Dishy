@@ -6,8 +6,7 @@ Rails.application.configure do
   config.assets.digest = true
   # Code is not reloaded between requests.
   config.cache_classes = true
-  
-  config.secret_key = ENV['DEVISE_SECRET_KEY'] if Rails.env.production?
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
