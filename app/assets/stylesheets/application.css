@@ -29,7 +29,7 @@ body#log-in {
 }
 
 body#home {
-  background-image: url("/assets/01-menu.png");
+  background-image: url("/assets/01-menu-long.png");
 }
 
 body#single-category {
@@ -330,6 +330,15 @@ h4 {
 
 .profile-info {
   float: right;
+  padding-top: 0px;
+}
+
+.profile-info-text {
+  font-size : 1.2em;
+  line-height: 2;
+}
+
+#profile-recipes {
   padding-top: 0px;
 }
 
