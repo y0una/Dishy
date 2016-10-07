@@ -2,7 +2,7 @@
 <body id="sign-up">
 
   <div class="x-up-form">
-  <h5>Sign up</h5>
+    <h5>Sign up</h5>
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= devise_error_messages! %>
 
@@ -19,7 +19,7 @@
       </div>
 
       <div class="field">
-        <%= f.password_field :password_confirmation, :class => "input-field", autocomplete: "off", placeholder: "Password confirmation" %>
+        <%= f.password_field :password_confirmation, class: "input-field",placeholder: "Confirm Password", autocomplete: "off" %>
       </div>
 
       <div class="field" id="actions">

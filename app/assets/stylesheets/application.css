@@ -49,6 +49,10 @@ body#dish-detail {
   background-image: url("/assets/03-dish-detail.png");
 }
 
+body#edit-user {
+  background-image: url("/assets/00-login.png")
+}
+
 .logo {
   text-align: center;
   margin-bottom: 6px;
@@ -252,6 +256,10 @@ h5 {
   padding-left: 15px;
 }
 
+.edit-form {
+  height: 990%;
+}
+
 .field .remember {
   padding-top: 12px;
 }
@@ -267,6 +275,10 @@ h5 {
   width: 260px;
   margin: 0 auto;
   letter-spacing: .5px;
+}
+
+#leave-blank {
+  height: 50%;
 }
 
 .field#actions {
