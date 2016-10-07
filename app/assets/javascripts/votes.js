@@ -12,7 +12,6 @@ var displayUpvotes = function() {
     });
     request.done(function(response) {
       console.log(response);
-      console.log("request done")
     });
   });
 }
