@@ -41,6 +41,10 @@ body#new-dish {
   background-image: url("/assets/02-single-category.png")
 }
 
+body#edit-dish {
+  background-image: url("/assets/02-single-category.png")
+}
+
 body#dish-detail {
   background-image: url("/assets/03-dish-detail.png");
 }
