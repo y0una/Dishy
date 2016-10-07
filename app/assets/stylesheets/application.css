@@ -318,19 +318,23 @@ h4 {
   font-size: 1em;
 }
 
+.profile-wrapper {
+  text-align: center;
+}
+
 .profile {
   margin: auto;
-  width: 325px;
+  display: inline-block;
   overflow: hidden;
 }
 
 .profile-pic {
   float: left;
+  padding-right: 20px;
 }
 
 .profile-info {
   float: right;
-  padding-top: 0px;
 }
 
 .profile-info-text {

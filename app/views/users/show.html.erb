@@ -1,3 +1,4 @@
+<div class="profile-wrapper">
 <div class="profile">
   <div class="profile-pic">
     <%= gravatar_for @user %><br>
@@ -14,6 +15,7 @@
       <%= pluralize(@user.dishes.map(&:votes).flatten.count, "total upvote") %>
     </span>
   </div>
+</div>
 </div>
 
 <div class="white-bg" id="profile-recipes">
