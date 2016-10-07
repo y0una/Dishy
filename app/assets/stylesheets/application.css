@@ -70,6 +70,12 @@ body#single-category {
   padding-left:18px;
 }
 
+#links a:hover {
+  color:#83A035;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 #search-container {
   margin-left: 10%;
   text-align: right;
@@ -220,7 +226,7 @@ h4 {
 }
 
 .field {
-  width: 10%;
+  width: 35%;
   margin: 0 auto;
 }
 
@@ -282,6 +288,36 @@ h4 {
   padding-right: 30px;
 }
 
+.login-title {
+  font-size: 2em;
+  padding-bottom: 1.5%;
+}
+
+#loginField {
+  -webkit-appearance: none;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Cormorant Garamond', serif;
+  background-image: none;
+}
+/*#loginField input[type=text] {
+  height:200px !important;
+  box-sizing: border-box;
+}
+#loginField input[type=submit] {
+  width: 85%;
+  height: 60px;
+}*/
+
+.input-field {
+  height: 3em;
+  width: 95%;
+  padding-left: 3%;
+  font-size: 1em;
+}
+
 .profile {
   margin: auto;
   width: 325px;
@@ -305,5 +341,48 @@ h4 {
   margin-left: 15%;
 }
 
+.remember {
+  display: inline-block;
+}
 
+#submit-btn {
+  height: 2.75em;
+  width: 100%;
+  background-color: #83A035;
+  color: white;
+  font-size: 1.2em;
+  padding: 3%;
+  border:none;
+  border-radius: 2px;
+  font-family: 'Cormorant Garamond', serif;
+}
 
+#devise-sign-up {
+  text-align: center;
+  color: #A4CB3F;
+}
+
+.devise-links {
+  text-align: center;
+  font-weight: bold;
+
+}
+
+.devise-links a {
+  text-decoration: none;
+  margin: 0 auto;
+  color: #A4CB3F;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+
+.devise-links a:hover {
+  color:green !important;
+}
+
+.devise-forgot {
+}
+
+.devise-forgot:hover {
+
+}
