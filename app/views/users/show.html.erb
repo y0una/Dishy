@@ -9,7 +9,7 @@
     </span>
   </div>
   <div class="profile-info">
-    <h1><%= @user.username %></h1>
+    <h1 class="profile-username"><%= @user.username %></h1>
     <span class="profile-info-text">
       <%= pluralize(@user.dishes.count, "submitted dish") %><br>
       <%= pluralize(@user.dishes.map(&:votes).flatten.count, "total upvote") %>
