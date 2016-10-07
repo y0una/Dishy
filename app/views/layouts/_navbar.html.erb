@@ -10,18 +10,19 @@
  </div>
 
  <div class="logo-and-text">
-  <div class="logo">
+  <a href="/"><div class="logo">
     <%= image_tag("icon.png", size: "62x25") %>
   </div>
   <div class="logo">
     <%= image_tag("frais-logo.png", size: "55x24") %>
   </div>
+  </a>
 </div>
 
 <div id="links">
   <%= link_to "Home", root_path %>
   <%unless current_user %>
-  <%= link_to "Register", new_user_registration_path %>
+  <%= link_to "Sign up", new_user_registration_path %>
   <%= link_to "Login", new_user_session_path %>
   <%else%>
   <%= link_to current_user.username, current_user %>

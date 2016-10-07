@@ -1,9 +1,11 @@
+
+<body id="log-in">
 <h2 class="login-title">Log in</h2>
 
-<div id="loginField">
+<div class="x-up-form">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
-    <%= f.email_field :email, autofocus: true, placeholder: "Email", class: "input-field" %>
+    <%= f.email_field :email, autofocus: true, placeholder: "Email", :class => "input-field" %>
   </div>
 
   <div class="field">
@@ -15,9 +17,9 @@
       <%= f.check_box :remember_me, class: "remember" %>
       <%= f.label :remember_me, class: "remember" %>
     </div>
-  <% end -%>
+  <% end %>
 
-  <div class="actions">
+  <div class="field" id="actions">
     <%= f.submit "Log In", id: "submit-btn"%>
   </div>
 <% end %>
@@ -25,3 +27,5 @@
     <%= render "devise/shared/links" %>
   </div>
 </div>
+
+</body>
