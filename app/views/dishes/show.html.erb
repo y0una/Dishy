@@ -1,8 +1,9 @@
 <p id="notice"><%= notice %></p>
 
 
-
-<%= link_to "Back to #{@dish.category.name}", category_dishes_path(@dish.category) %>
+<div class="back-link">
+  <%= link_to "Back to #{@dish.category.name}", category_dishes_path(@dish.category) %>
+</div>
 <h4>
   <%= @dish.title %>
 </h4>
