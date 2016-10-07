@@ -125,6 +125,7 @@ h3 a {
   width: 300px;
   margin: 0 auto;
   font-family: 'Cormorant Garamond', serif;
+  background-image: none;
 }
 /*#loginField input[type=text] {
   height:200px !important;
