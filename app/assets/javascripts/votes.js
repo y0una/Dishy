@@ -14,6 +14,16 @@ var displayUpvotes = function() {
     });
     request.done(function(response) {
       $("#vote-count-" + response.id).html(response.text);
+      if($("#arugula-" + response.id).children().attr("src") == "/assets/arugula-green-8c08ec3c29d8d6dabab8b6271a8712b08fe4a66490733ac46c7986599c330c0c.png") {
+        $("#arugula-" + response.id).children().attr("src", "/assets/arugula.png");
+      } else {
+        $("#arugula-" + response.id).children().attr("src", "/assets/arugula-green.png");
+      }
+      // if($("#arugula-" + response.id).children().attr("src")) {
+      //   $("#arugula-" + response.id).children().attr("src", "/assets/arugula.png");
+      // } else {
+      //   $("#arugula-" + response.id).children().attr("src", "/assets/arugula-green.png");
+      // }
     });
   });
 }
