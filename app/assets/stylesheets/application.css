@@ -386,3 +386,8 @@ h4 {
 .devise-forgot:hover {
 
 }
+
+a:hover {
+  background-color: transparent;
+  color:#83A035;
+}
