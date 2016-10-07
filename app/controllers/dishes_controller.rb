@@ -15,8 +15,6 @@ class DishesController < ApplicationController
   # GET categories/1/dishes/new
   def new
     @dish = @category.dishes.new
-    @dish.user = current_user
-    @dish.save
   end
 
   # GET categories/1/dishes/1/edit
@@ -26,7 +24,7 @@ class DishesController < ApplicationController
   # POST categories/1/dishes
   def create
     @dish = @category.dishes.build(dish_params)
-
+    @dish.user = current_user
     if @dish.save
       redirect_to([@dish.category, @dish], notice: 'Dish was successfully created.')
     else
