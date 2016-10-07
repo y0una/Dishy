@@ -30,8 +30,6 @@ body#log-in {
 
 body#home {
   background-image: url("/assets/01-menu-long.png");
-  /*width: 60%;*/
- /* height: auto;*/
 }
 
 body#single-category {
