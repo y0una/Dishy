@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-10-06T17:14:17-07:00">2016-10-06T17:14:17-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-10-06T17:40:14-07:00">2016-10-06T17:40:14-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.36%</span></span>
+    (<span class="covered_percent"><span class="green">97.8%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.15
+         1.18
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>34</b> files in total.
-    <b>165</b> relevant lines. 
-    <span class="green"><b>159</b> lines covered</span> and
-    <span class="red"><b>6</b> lines missed </span>
+    <b>36</b> files in total.
+    <b>182</b> relevant lines. 
+    <span class="green"><b>178</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -67,7 +67,7 @@
         <td>3</td>
         <td>3</td>
         <td>0</td>
-        <td>3.3</td>
+        <td>4.0</td>
       </tr>
       
       <tr>
@@ -78,6 +78,16 @@
         <td>3</td>
         <td>1</td>
         <td>0.8</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#472f04e3c38694565aa24d88a71369921b7e5418" class="src_link" title="app/controllers/searches_controller.rb">app/controllers/searches_controller.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -162,12 +172,12 @@
       
       <tr>
         <td class="strong"><a href="#32362f1cb005d3f7667193463f3328ea718677d5" class="src_link" title="app/models/dish.rb">app/models/dish.rb</a></td>
-        <td class="red strong">71.43 %</td>
+        <td class="green strong">100.0 %</td>
         <td>12</td>
         <td>7</td>
-        <td>5</td>
-        <td>2</td>
-        <td>0.7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>1.3</td>
       </tr>
       
       <tr>
@@ -371,6 +381,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#410c8ac3ab372b704ab1ab8e74cc29d9a9284f17" class="src_link" title="spec/features/search_spec.rb">spec/features/search_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>26</td>
+        <td>14</td>
+        <td>14</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#b445ce56dd1d41537457382d675069a1607aba38" class="src_link" title="spec/features/voting_spec.rb">spec/features/voting_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>27</td>
@@ -516,8 +536,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="3">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="10" data-linenumber="3">
+          <span class="hits">10</span>
           
           <code class="ruby">    @categories = Category.all</code>
         </li>
@@ -589,6 +609,54 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="472f04e3c38694565aa24d88a71369921b7e5418">
+  <div class="header">
+    <h3>app/controllers/searches_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class SearchesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def show</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @results = Dish.search(params[:search])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
@@ -931,11 +999,11 @@
         <div class="source_table" id="32362f1cb005d3f7667193463f3328ea718677d5">
   <div class="header">
     <h3>app/models/dish.rb</h3>
-    <h4><span class="red">71.43 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>7</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -984,14 +1052,14 @@
           <code class="ruby">  def self.search(search)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
           
           <code class="ruby">    if search</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
           
           <code class="ruby">      Dish.where(&#39;ingredients ILIKE ? OR title ILIKE ?&#39;, &quot;%#{search}%&quot;, &quot;%#{search}%&quot;)</code>
         </li>
@@ -4387,6 +4455,180 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="410c8ac3ab372b704ab1ab8e74cc29d9a9284f17">
+  <div class="header">
+    <h3>spec/features/search_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &#39;search engine functionality&#39;, :type =&gt; :feature do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;searches by ingredients&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    within(&quot;.nav-bar&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      fill_in &#39;search&#39;, with: &#39;maize&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_button &#39;Search&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39; Votes - Gumbo beet greens corn 6 Votes - Gumbo beet greens corn 6 Votes - Gumbo beet greens corn 4 Votes -</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    Gumbo beet greens corn 4 Votes - Gumbo beet greens corn 2 Votes - Gumbo beet greens corn 1 Vote - Gumbo beet greens corn 1 Vote - Gumbo beet greens corn 1 Vote -</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">    Gumbo beet greens corn 1 Vote - Gumbo beet greens corn 0 Votes - Gumbo beet greens corn 0 Votes - Gumbo beet greens corn 0 Votes - Gumbo beet greens corn 0 Votes -</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    Gumbo beet greens corn 0 Votes - Gumbo beet greens corn&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;searches by title&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &#39;/&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    within(&quot;.nav-bar&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      fill_in &#39;search&#39;, with: &#39;celery&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_button &#39;Search&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;9 Votes - Celery quandong swiss chard 9 Votes - Celery quandong swiss chard 8 Votes - Celery quandong swiss chard 8 Votes -</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">    Celery quandong swiss chard 7 Votes - Celery quandong swiss chard 7 Votes - Celery quandong swiss chard 7 Votes - Celery quandong swiss chard 7 Votes -</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    Celery quandong swiss chard 6 Votes - Celery quandong swiss chard 5 Votes - Celery quandong swiss chard 4 Votes - Celery quandong swiss chard 4 Votes -</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">    Celery quandong swiss chard 3 Votes - Celery quandong swiss chard 3 Votes - Celery quandong swiss chard 1 Vote - Celery quandong swiss chard&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">end</code>
