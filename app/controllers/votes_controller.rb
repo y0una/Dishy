@@ -6,11 +6,7 @@ class VotesController < ApplicationController
 
     @vote = Vote.find_or_create_by(dish_id: @dish.id, user_id: current_user.id)
     if request.xhr?
-      if @dish.votes.count == 1
-        render json: { text:"1 Vote", id: @dish.id }
-      else
-        render json: { text:"#{@dish.votes.count} Votes", id: @dish.id.to_s }
-      end
+      render json: { text:"#{@dish.votes.count}", id: @dish.id.to_s }
     else
       redirect_to :back
     end

@@ -9,7 +9,7 @@
         <h3><%= link_to dish.title, [dish.category, dish] %></h3>
         <div>
           <%= render partial: "votes/vote", locals: { dish: dish } %>
-          <div><span id="vote-count-<%= dish.id %>"><%= pluralize(dish.votes.count, "Vote") %></span>
+          <div><span class="vote-count" id="vote-count-<%= dish.id %>"><%= dish.votes.count %></span>
           </div>
           <div>
             made by <%= link_to dish.user.username, user_path(dish.user) %>
