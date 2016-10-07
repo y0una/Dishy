@@ -14,7 +14,7 @@ User.create(username:"Hakimmy", email:"ineedgravatar@gmail.com", password:"11111
 User.create(username:"Kenny", email:"ineedgravatar@gmail.com", password:"1111111")
 
 
-15.times do
+30.times do
   dish = Category.all.sample.dishes.new(title:"Gumbo beet greens corn", prep_time:"30 minutes", ingredients:"maize bamboo shoot green bean swiss chard seakale pumpkin", directions:"Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean earthnut pea sierra leone bologi leek soko.")
   dish.user = User.find_by(username:"Kimmy")
   dish.save
