@@ -1,7 +1,7 @@
 <div class="profile-wrapper">
 <div class="profile">
   <div class="profile-pic">
-    <%= gravatar_for @user %><br>
+    <%= image_tag("profilepic.png") %><br>
     <span class="profile-info-text">
       <% if @user == current_user %>
         <%= link_to "Edit profile", edit_user_registration_path(current_user) %>
