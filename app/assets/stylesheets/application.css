@@ -18,6 +18,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: 'Cormorant Garamond', serif;
+  padding-bottom: 5%;
 }
 
 body#sign-up {
@@ -36,6 +37,10 @@ body#single-category {
   background-image: url("/assets/02-single-category.png");
 }
 
+body#dish-detail {
+  background-image: url("/assets/03-dish-detail.png");
+}
+
 .logo {
   text-align: center;
   margin-bottom: 6px;
@@ -48,7 +53,7 @@ body#single-category {
 }
 
 .back-link {
-  margin-left: 30.5%;
+  margin-left: 20%;
 }
 
 .back-link a {
@@ -77,7 +82,7 @@ body#single-category {
 }
 
 #search-container {
-  margin-left: 10%;
+  margin-left: 7.5%;
   text-align: right;
   display:inline-block;
   width:32%;
@@ -86,9 +91,9 @@ body#single-category {
 #search {
   height: 30px;
   border-radius: 100px;
-  width: 170px;
+  width: 180px;
   font-size: 12px;
-  padding-left: 13px;
+  padding-left: 18px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
   outline: none;
@@ -150,7 +155,7 @@ body#single-category {
 #directions-and-ingredients {
   padding-top: 6%;
   line-height: 2.5em;
-  margin-left: 30%;
+  margin-left: 20%;
 }
 
 .sub-header {
@@ -159,7 +164,7 @@ body#single-category {
 }
 
 #directions {
-  width:30%;
+  width:54%;
   font-size: 18px;
   display: inline-block;
 }
@@ -222,7 +227,16 @@ h4 {
   /*display: inline-block;*/
   margin: 0 auto;
   width: 50%;
+  padding-top: 30px;
+}
 
+/*.x-up-form::placeholder{
+  font-size: 33px;
+}*/
+
+.x-up-form .field .input-field{
+  font-size: 17px;
+  padding-left: 15px;
 }
 
 .field {
@@ -232,16 +246,17 @@ h4 {
 
 .field#actions {
   text-align: center;
+  margin-top: 45px;
 }
 
 .input-field {
-  height:37px;
+  height:30px;
   width: 270px;
   border-radius: 2px;
   border:none;
   box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
   padding-left: 15px;
-  font-size: 18px;
+  font-size: 28px;
   font-family: 'Cormorant Garamond', serif;
 }
 
@@ -275,6 +290,7 @@ h4 {
   width: 70%;
   list-style: none;
   border-bottom: 15%;
+  padding-bottom: 10%;
 }
 
 .white-bg ul {
@@ -312,7 +328,7 @@ h4 {
 }*/
 
 .input-field {
-  height: 3em;
+  height: 2em;
   width: 95%;
   padding-left: 3%;
   font-size: 1em;
@@ -385,4 +401,11 @@ h4 {
 
 .devise-forgot:hover {
 
+}
+
+.alert {
+  text-align:center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size:18px;
+  margin-bottom: 50px;
 }

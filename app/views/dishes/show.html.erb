@@ -1,6 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-
+<body id="dish-detail">
+<div class="white-bg">
 <div class="back-link">
   <%= link_to "Back to #{@dish.category.name}", category_dishes_path(@dish.category) %>
 </div>
@@ -39,3 +38,5 @@
   <%= link_to 'Edit', edit_category_dish_path(@dish.category, @dish) %>
   <%= link_to 'Back', category_dishes_path(@dish.category) %>
 <% end %>
+</div>
+</body>
