@@ -113,6 +113,21 @@ h3 a {
   padding-right: 30px;
 }
 
+.user-info {
+  margin: auto;
+  width: 30%;
+  overflow: hidden;
+}
+
+.profile-pic {
+  float: left;
+}
+
+.profile-info {
+  float: right;
+  padding-top: 0px;
+}
+
 
 
 
