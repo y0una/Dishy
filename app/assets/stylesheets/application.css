@@ -333,10 +333,6 @@ h4 {
   padding-top: 0px;
 }
 
-.user-dishes {
-  text-align: center;
-}
-
 .chef-duration-left {
   margin-left: 15%;
 }
@@ -385,4 +381,9 @@ h4 {
 
 .devise-forgot:hover {
 
+}
+
+a:hover {
+  background-color: transparent;
+  color:#83A035;
 }
