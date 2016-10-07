@@ -29,7 +29,7 @@ body#log-in {
 }
 
 body#home {
-  background-image: url("/assets/01-menu.png");
+  background-image: url("/assets/01-menu-long.png");
 }
 
 body#single-category {
@@ -326,18 +326,37 @@ h4 {
 }*/
 
 
+.profile-wrapper {
+  text-align: center;
+}
+
 .profile {
   margin: auto;
-  width: 325px;
+  display: inline-block;
   overflow: hidden;
+}
+
+.profile-username {
+  margin-top: 5px;
 }
 
 .profile-pic {
   float: left;
+  padding-right: 30px;
+  text-align: left;
 }
 
 .profile-info {
   float: right;
+  text-align: left;
+}
+
+.profile-info-text {
+  font-size : 1.2em;
+  line-height: 2;
+}
+
+#profile-recipes {
   padding-top: 0px;
 }
 
