@@ -45,6 +45,7 @@ class DishesController < ApplicationController
 
   # DELETE categories/1/dishes/1
   def destroy
+    @dish.votes.destroy_all
     @dish.destroy
 
     redirect_to category_dishes_url(@category)
