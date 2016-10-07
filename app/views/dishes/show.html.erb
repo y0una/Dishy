@@ -12,7 +12,7 @@
 </p>
 
 <p>
-<%=@dish.votes.count%> Votes
+<span id="vote-count-<%= @dish.id %>"><%= pluralize(@dish.votes.count, "Vote") %></span>
 </p>
 
 <p>

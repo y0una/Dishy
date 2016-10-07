@@ -1,19 +1,21 @@
 <div class="white-bg">
-
-<div class="dishes">
+  <div class="dishes">
     <h2><%=@category.name%></h2>
     <%= link_to 'New Dish', new_category_dish_path(params[:category_id]) %>
-
-    <% @dishes.each do |dish| %>
+      <% @dishes.each do |dish| %>
         <h3><%= link_to dish.title, [dish.category, dish] %></h3>
         <div>
-        <%= render partial: "votes/vote", locals: { dish: dish } %>
-        <div><%= pluralize(dish.votes.count, "Vote") %>
+          <%= render partial: "votes/vote", locals: { dish: dish } %>
+          <div><span id="vote-count-<%= dish.id %>"><%= pluralize(dish.votes.count, "Vote") %></span>
+          </div>
+          <div>
+            made by <%= link_to dish.user.username, user_path(dish.user) %>
+          </div>
+          <div>
+            Time: <%= dish.prep_time %> minutes
+          </div>
         </div>
-            <div>made by <%= link_to dish.user.username, user_path(dish.user) %></div>
-            <div>Time: <%= dish.prep_time %> minutes</div>
-        </div>
-    <% end %>
-    <br />
+      <% end %>
+      <br />
   </div>
 </div>
