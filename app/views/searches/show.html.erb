@@ -1,8 +1,16 @@
-<% if @results %>
-    <% @results.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
-    <p>
-      <%= pluralize(result.votes.count, "Vote") %> -
-      <%= link_to result.title, category_dish_path(result.category, result) %>
-    </p>
+<div class="white-bg" id="profile-recipes">
+  <ul>
+    <% if @results %>
+
+        <% @results.sort_by{ |dish| dish.votes.count }.reverse.each do |result| %>
+        <div class="dish-line">
+          <li>
+            <%= pluralize(result.votes.count, "Vote") %>
+            <span class="dish-title"> <%= link_to result.title, category_dish_path(result.category, result) %> </span>
+          </li>
+        </div>
+      <% end %>
     <% end %>
-<% end %>
+
+  </ul>
+</div>
