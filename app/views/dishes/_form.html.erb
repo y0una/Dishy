@@ -17,17 +17,21 @@
     </div>
 
     <div class="field">
-      <%= f.number_field :prep_time, id: "prep-tme", class: "input-field input-box", placeholder: "Prep Time"   %>
+      <%= f.number_field :prep_time, id: "prep-tme", class: "input-field input-box", placeholder: "Prep Time" %>
     </div>
-    <div class="field">
-      <%= f.text_area :ingredients, class: "input-field input-box", placeholder: "Ingredients"  %>
+
+    <div class="field2">
+      <%= f.text_area :ingredients, class: "input-longer-box", placeholder: "Ingredients" %>
     </div>
-    <div class="field">
-      <%= f.text_area :directions, class: "input-field input-box", placeholder: "Directions"  %>
+
+    <div class="field2">
+      <%= f.text_area :directions, class: "input-longer-box", placeholder: "Directions"  %>
     </div>
+
     <div class="field actions">
       <%= f.submit "Create Dish", id: "submit-btn" %>
-      <%= link_to 'Back', category_dishes_path(@dish.category) %>
+      <%= link_to 'Cancel', category_dishes_path(@dish.category), class: 'field-actions-cancel' %>
     </div>
+
   <% end %>
 </div>

@@ -1,11 +1,11 @@
 <!-- SINGLE CATEGORY ALL DISHES -->
 <body id="single-category">
   <div class="white-bg">
-
-    <h2><%=@category.name%></h2>
     <div class="add-dish">
      <%= link_to '+ Add a Dish', new_category_dish_path(params[:category_id]) %>
     </div>
+
+    <div class="category-header"><%=@category.name%></div>
     <div>
       <ul>
       <% @dishes.each do |dish| %>

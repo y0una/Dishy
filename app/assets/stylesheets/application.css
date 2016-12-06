@@ -19,6 +19,8 @@ body {
   background-size: cover;
   font-family: 'Cormorant Garamond', serif;
   padding-bottom: 5%;
+  display: block;
+  margin: 25px auto;
 }
 
 body#sign-up {
@@ -70,6 +72,7 @@ body#edit-user {
 
 .back-link a {
   text-decoration: none;
+  color: #637820;
 }
 
 #links {
@@ -78,8 +81,13 @@ body#edit-user {
   padding-left: .1%;
   display:inline-block;
   width: 30%;
-  font-size: 15px;
+  font-size: 12px;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  letter-spacing: .1em;
+  text-decoration: none;
 }
 
 #links a {
@@ -112,29 +120,38 @@ body#edit-user {
   letter-spacing: .3px;
 }
 
+#search:focus {
+/*    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+*/
+
+    box-shadow:inset 0 0 2px 2px #9ecaed;
+    background: #fff;
+}
+
 .search-btn {
   display: none;
 }
 
 .dish-title {
-  padding-left: 8%;
+  padding-left: 5.95%;
   font-size: 30px;
   font-weight: 400;
   font-style: italic;
-  color: #333333;
-
-}
-
-.dish-title a {
-  text-decoration: none;
 }
 
 .vote-count {
   border-top: 1px solid gray;
   font-size: 30px;
-  color: #333333;
+  color: #364308;
   text-align: right;
   font-family: 'Cormorant Garamond', serif;
+}
+
+.dish-title a {
+  text-decoration: none;
+  color: #637820;
 }
 
 .dish-line {
@@ -147,8 +164,8 @@ body#edit-user {
 }
 
 .white-bg ul {
-  padding-bottom: 8%;
-  margin-top: 7%;
+  padding-bottom: 2%;
+  margin-top: 1%;
 }
 
 #vote-and-count {
@@ -158,10 +175,15 @@ body#edit-user {
 
 #chef-and-duration {
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-family: 'Cormorant Garamond', serif;
-  font-style: italic;
+  /*font-style: italic;*/
   font-weight: lighter;
+}
+
+#chef-and-duration a {
+  color:#637820;
+  text-decoration: none;
 }
 
 #directions-and-ingredients {
@@ -193,11 +215,26 @@ body#edit-user {
 h1 {
   text-decoration: none;
   font-size: 38px;
+  letter-spacing: 1px;
+  /*font-weight: 510;*/
+  font-color:#303E48;
+  /*text-align: center;*/
+  /*text-transform: uppercase;*/
+}
+
+h6 {
+  text-decoration: none;
+  font-size: 38px;
   letter-spacing: 2.5px;
   font-weight: 510;
   font-color:#303E48;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  color:#303E48;
+  font-weight: lighter;
 }
 
 h2 {
@@ -208,6 +245,36 @@ h2 {
   font-weight: 400;
   color:#303E48;
   text-align: center;
+  transition:all .2s ease-out;
+}
+
+.category-header {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  color:#303E48;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+h2:hover {
+  /*transform:translate(0px,-10px);*/
+  -webkit-transform: scale(0.95);
+  color:black;
+}
+
+
+/*a img:hover {
+  transform:scale(1.08);
+  transition:all .2s ease-in;
+}*/
+
+
+.arugula-effect:hover {
+  transform:scale(1.08);
+  transition:all .2s ease-in;
 }
 
 h2 a {
@@ -242,6 +309,7 @@ h5 {
   margin: 0;
   font-weight: 400;
   padding-bottom: 45px;
+  padding-top: 10px;
 }
 
 .x-up-form {
@@ -264,17 +332,51 @@ h5 {
   padding-top: 12px;
 }
 
+.field-actions-cancel {
+  text-decoration: none;
+  text-decoration: center;
+  margin-left: 100px;
+  color: #687D22;
+}
+
 .field#actions a {
   color:#83A035;
   text-decoration: none;
-  font-size: 16px;
+  color:#83A035;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: .05em;
+  font-weight: bolder;
 }
 
 .field {
   height:37px;
   width: 260px;
+/*margin-top: 50px;*/
   margin: 0 auto;
   letter-spacing: .5px;
+/*  text-decoration: none !important;*/
+}
+
+.field2 {
+  text-align: center;
+}
+
+.field-links a {
+/*  height:37px;
+  width: 260px;*/
+/*margin-top: 50px;*/
+  margin: 0 auto;
+  letter-spacing: .5px;
+  text-decoration: none;
+  color:#83A035;
+  /*text-align: center;*/
+}
+
+#cancel-back {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #83A035 !important;
 }
 
 #leave-blank {
@@ -283,7 +385,7 @@ h5 {
 
 .field#actions {
   text-align: center;
-  margin-top: 45px;
+  margin-top: 35px;
   font-size: 13px;
 }
 
@@ -302,7 +404,19 @@ h5 {
   height: 3em;
   width: 95%;
   padding-left: 3%;
-  font-size: 1em;
+}
+
+.input-longer-box {
+  height:60px;
+  width: 246px;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  border:none;
+  box-shadow: inset 0px 0px 3px rgba(0,0,0,0.4);
+  padding-left: 14px;
+  padding-top: 7px;
+  margin-left: 3px;
 }
 
 #prep-time {
@@ -317,29 +431,46 @@ h5 {
 
 .add-dish {
   text-align: right;
-  padding-right: 17%;
+  padding-right: 12%;
   padding-top: 2%;
 }
 
 .add-dish a {
   text-decoration: none;
   font-size: 20px;
+  color: #637820;
 }
 
-.white-bg {
-  border-top: 15%;
+.white-bg-home {
+  border-top: 1%;
   background-color: white;
   /*position: absolute;*/
   top: 150px;
 /*  left: 100;
   r`ight: 100;*/
   background: rgba(255, 255, 255, .5);
-  padding-top: 5%;
+  padding-top: 6%;
   margin: auto;
   width: 70%;
   list-style: none;
   border-bottom: 15%;
-  padding-bottom: 10%;
+  padding-bottom: 6%;
+}
+
+.white-bg {
+  border-top: 1%;
+  background-color: white;
+  /*position: absolute;*/
+  top: 150px;
+/*  left: 100;
+  r`ight: 100;*/
+  background: rgba(255, 255, 255, .5);
+  padding-top: 0%;
+  margin: auto;
+  width: 70%;
+  list-style: none;
+  border-bottom: 15%;
+  padding-bottom: 8%;
 }
 
 .white-bg ul {
@@ -392,26 +523,47 @@ h5 {
   margin: auto;
   display: inline-block;
   overflow: hidden;
+  min-width: 380px;
 }
 
 .profile-username {
   margin-top: 5px;
+  margin-left: 0px;
 }
 
 .profile-pic {
   float: left;
-  padding-right: 30px;
+  /*padding-right: 10px;*/
   text-align: left;
 }
 
 .profile-info {
   float: right;
   text-align: left;
+  margin-left: 25px;
 }
 
 .profile-info-text {
   font-size : 1.2em;
   line-height: 2;
+  /*margin-left: 25px;*/
+}
+
+.profile-info-text a {
+  text-decoration: none;
+  color: #637820;
+}
+
+.profile-info-edit a {
+  text-decoration: none;
+  color: #637820;
+/*  margin-left: 25px;*/
+  padding-top: 100px;
+  text-align: bottom;
+  display: block;
+  margin-top: 110px;
+/*  padding-left:-100px !important;*/
+
 }
 
 #profile-recipes {
@@ -419,7 +571,12 @@ h5 {
 }
 
 .chef-duration-left {
-  margin-left: 15%;
+  margin-left: 16%;
+}
+
+.chef-duration-left a {
+  color:#637820;
+  text-decoration: none;
 }
 
 .remember {
@@ -443,33 +600,42 @@ h5 {
   border-radius: 2px;
   font-family: 'Cormorant Garamond', serif;
   margin-bottom: 25px;
+  margin-top: 0px;
   letter-spacing: .9px;
   font-weight: lighter;
 }
 
 #submit-btn:hover {
-  background-color: #83CF35
+  background-color: #819639
 }
 
 #devise-sign-up {
   text-align: center;
   color: #83A035;
-  padding-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 3px;
+  margin-bottom: 1px;
+  margin-top: 35px;
 }
 
 .devise-links {
+  margin-top: 30px;
   text-align: center;
-  font-weight: bold;
+  /*font-weight: bold;*/
   color:#83A035;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: .05em;
+  font-weight: bolder;
 }
 
 .devise-links a {
   text-decoration: none;
-  margin: 0 auto;
+  padding-top: 0px;
+  margin-top: 0px;
+  /*margin: 0 auto;*/
   color: #83A035;
   font-weight: 800;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .devise-links a:hover {
@@ -478,7 +644,9 @@ h5 {
 
 .devise-forgot {
   color: #83A035;
-  margin-top: 12px;
+  padding-top: 0px;
+  margin: 0px;
+
 }
 
 .devise-forgot:hover {
@@ -489,17 +657,85 @@ h5 {
   text-align:center;
   font-family: 'Cormorant Garamond', serif;
   font-size:18px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  color: #956D0F;
+  margin-top: 0px;
 }
 
 .notice {
   text-align:center;
   font-family: 'Cormorant Garamond', serif;
   font-size:18px;
-  margin-bottom: 50px;
+  margin-bottom: 1%;
 }
 
 a:hover {
   background-color: transparent;
-  color:#83A035;
+  color:#4D5E15;
 }
+
+.home-links {
+  line-height: 3em;
+
+}
+
+.home-links a {
+  color: #596C1A;
+}
+
+a .home-links:hover {
+  color: #4D5E15;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.home {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:.5s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.content {
+  padding-top: 65px;
+}
+
+.space {
+  height:20px;
+}
+
+/*.vote-link:hover {
+  transform:translate(0px,-10px);
+}*/
+
+/*
+a .vote-link:hover{
+  position: relative;
+  top: -5px;
+}
+
+
+#arugula-46:hover {
+  position: relative;
+  top: -2px;
+}*/
+
+/*a img:hover {
+  position: relative;
+  top: -3px;
+}*/
+

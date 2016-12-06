@@ -1,7 +1,9 @@
 <body id="edit-user">
   <div class="x-up-form">
-  
-    <h5>Edit <%= resource_name.to_s.humanize %></h5>
+
+    <h5>Edit Account</h5>
+
+<!--     <h5>Edit <%= resource_name.to_s.humanize %></h5> -->
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: "edit-form", method: :put }) do |f| %>
       <%= devise_error_messages! %>
 
@@ -33,9 +35,11 @@
       </div>
     <% end %>
 
-    <div class="field">
-      <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
-      <%= link_to "Back", :back %>
+    <div class="field-links"><br><br><br>
+      <div id="cancel-back">
+        <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %><br>
+        <%= link_to "Back", :back %>
+      </div>
     </div>
   </div>
 </body>
