@@ -31,12 +31,8 @@ body#log-in {
   background-image: url("/assets/images/00-login.png");
 }
 
-/*body#home {
-  background-image: url("/assets/images/01-menu-long.png");
-}
-*/
 body#home {
-  background-image: url(<%= asset_path '01-menu-long.png' %>);
+  background-image: url("/assets/images/01-menu-long.png");
 }
 
 body#single-category {
