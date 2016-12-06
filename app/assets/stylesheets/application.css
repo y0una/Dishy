@@ -24,35 +24,35 @@ body {
 }
 
 body#sign-up {
-  background-image: url("/assets/00-login.png");
+  background-image: url("/assets/images/00-login.png");
 }
 
 body#log-in {
-  background-image: url("/assets/00-login.png");
+  background-image: url("/assets/images/00-login.png");
 }
 
 body#home {
-  background-image: url("/assets/01-menu-long.png");
+  background-image: url("/assets/images/01-menu-long.png");
 }
 
 body#single-category {
-  background-image: url("/assets/02-single-category.png");
+  background-image: url("/assets/images/02-single-category.png");
 }
 
 body#new-dish {
-  background-image: url("/assets/02-single-category.png")
+  background-image: url("/assets/images/02-single-category.png")
 }
 
 body#edit-dish {
-  background-image: url("/assets/02-single-category.png")
+  background-image: url("/assets/images/02-single-category.png")
 }
 
 body#dish-detail {
-  background-image: url("/assets/03-dish-detail.png");
+  background-image: url("/assets/images/03-dish-detail.png");
 }
 
 body#edit-user {
-  background-image: url("/assets/00-login.png")
+  background-image: url("/assets/images/00-login.png")
 }
 
 .logo {
