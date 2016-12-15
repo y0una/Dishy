@@ -1,6 +1,6 @@
 # Dishy
 
-#Team Potassium
+#Team Potassium!
 * Kim Stephenson
 * Youna Yang
 * Hakim Joseph
