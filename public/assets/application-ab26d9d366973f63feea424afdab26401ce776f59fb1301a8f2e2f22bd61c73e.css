@@ -1,0 +1,943 @@
+/* line 1, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 10, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 17, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 23, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 26, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 30, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 36, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 40, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 47, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 56, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 62, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 70, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 81, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 87, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ *= require_selfzzzzzzzzzzzzzz
+ */
+/* line 18, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Cormorant Garamond', serif;
+  padding-bottom: 5%;
+  display: block;
+  margin: 25px auto;
+}
+
+/* line 27, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#sign-up {
+  background-image: url("/assets/images/00-login.png");
+}
+
+/* line 31, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#log-in {
+  background-image: url("/assets/images/00-login.png");
+}
+
+/* line 35, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#home {
+  background-image: url("/assets/images/01-menu-long.png");
+}
+
+/* line 39, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#single-category {
+  background-image: url("/assets/images/02-single-category.png");
+}
+
+/* line 43, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#new-dish {
+  background-image: url("/assets/images/02-single-category.png");
+}
+
+/* line 47, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#edit-dish {
+  background-image: url("/assets/images/02-single-category.png");
+}
+
+/* line 51, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#dish-detail {
+  background-image: url("/assets/images/03-dish-detail.png");
+}
+
+/* line 55, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+body#edit-user {
+  background-image: url("/assets/images/00-login.png");
+}
+
+/* line 59, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.logo {
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+/* line 64, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.logo-and-text {
+  padding-bottom: 28px;
+  display: inline-block;
+  width: 20%;
+}
+
+/* line 70, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.back-link {
+  margin-left: 20%;
+}
+
+/* line 74, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.back-link a {
+  text-decoration: none;
+  color: #637820;
+}
+
+/* line 79, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#links {
+  /*float: right;*/
+  text-align: left;
+  padding-left: .1%;
+  display: inline-block;
+  width: 30%;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  padding-bottom: 20px;
+  letter-spacing: .1em;
+  text-decoration: none;
+}
+
+/* line 94, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#links a {
+  text-decoration: none;
+  padding-left: 18px;
+}
+
+/* line 99, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#links a:hover {
+  color: #83A035;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* line 105, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#search-container {
+  margin-left: 7.5%;
+  text-align: right;
+  display: inline-block;
+  width: 32%;
+}
+
+/* line 112, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#search {
+  height: 30px;
+  border-radius: 100px;
+  width: 180px;
+  font-size: 12px;
+  padding-left: 18px;
+  border: none;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+  outline: none;
+  letter-spacing: .3px;
+}
+
+/* line 124, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#search:focus {
+  /*    outline: none;
+      border-color: #9ecaed;
+      box-shadow: 0 0 10px #9ecaed;
+  */
+  box-shadow: inset 0 0 2px 2px #9ecaed;
+  background: #fff;
+}
+
+/* line 134, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.search-btn {
+  display: none;
+}
+
+/* line 138, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.dish-title {
+  padding-left: 5.95%;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 145, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.vote-count {
+  border-top: 1px solid gray;
+  font-size: 30px;
+  color: #364308;
+  text-align: right;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* line 153, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.dish-title a {
+  text-decoration: none;
+  color: #637820;
+}
+
+/* line 158, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.dish-line {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 163, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.white-bg ul li {
+  padding-left: 20%;
+}
+
+/* line 167, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.white-bg ul {
+  padding-bottom: 2%;
+  margin-top: 1%;
+}
+
+/* line 172, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#vote-and-count {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* line 177, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#chef-and-duration {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Cormorant Garamond', serif;
+  /*font-style: italic;*/
+  font-weight: lighter;
+}
+
+/* line 185, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#chef-and-duration a {
+  color: #637820;
+  text-decoration: none;
+}
+
+/* line 190, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#directions-and-ingredients {
+  padding-top: 6%;
+  line-height: 2.5em;
+  margin-left: 20%;
+}
+
+/* line 196, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.sub-header {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+/* line 201, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#directions {
+  width: 54%;
+  font-size: 18px;
+  display: inline-block;
+}
+
+/* line 207, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#ingredients {
+  width: 15%;
+  font-size: 18px;
+  font-weight: lighter;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 6%;
+}
+
+/* line 216, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h1 {
+  text-decoration: none;
+  font-size: 38px;
+  letter-spacing: 1px;
+  /*font-weight: 510;*/
+  font-color: #303E48;
+  /*text-align: center;*/
+  /*text-transform: uppercase;*/
+}
+
+/* line 226, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h6 {
+  text-decoration: none;
+  font-size: 38px;
+  letter-spacing: 2.5px;
+  font-weight: 510;
+  font-color: #303E48;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-family: 'Cormorant Garamond', serif;
+  color: #303E48;
+  font-weight: lighter;
+}
+
+/* line 241, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h2 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  color: #303E48;
+  text-align: center;
+  transition: all .2s ease-out;
+}
+
+/* line 252, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.category-header {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  color: #303E48;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+/* line 263, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h2:hover {
+  /*transform:translate(0px,-10px);*/
+  -webkit-transform: scale(0.95);
+  color: black;
+}
+
+/*a img:hover {
+  transform:scale(1.08);
+  transition:all .2s ease-in;
+}*/
+/* line 276, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.arugula-effect:hover {
+  transform: scale(1.08);
+  transition: all .2s ease-in;
+}
+
+/* line 281, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h2 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 38px;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  font-color: #303E48;
+}
+
+/* line 290, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h3 a {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 35px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* line 298, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h4 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* line 306, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+h5 {
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0;
+  font-weight: 400;
+  padding-bottom: 45px;
+  padding-top: 10px;
+}
+
+/* line 316, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.x-up-form {
+  /*display: inline-block;*/
+  margin: 0 auto;
+  width: 50%;
+  padding-top: 10px;
+}
+
+/* line 323, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.x-up-form .field .input-field {
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+/* line 328, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.edit-form {
+  height: 990%;
+}
+
+/* line 332, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.field .remember {
+  padding-top: 12px;
+}
+
+/* line 336, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.field-actions-cancel {
+  text-decoration: none;
+  text-decoration: center;
+  margin-left: 100px;
+  color: #687D22;
+}
+
+/* line 343, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.field#actions a {
+  color: #83A035;
+  text-decoration: none;
+  color: #83A035;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: .05em;
+  font-weight: bolder;
+}
+
+/* line 353, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.field {
+  height: 37px;
+  width: 260px;
+  /*margin-top: 50px;*/
+  margin: 0 auto;
+  letter-spacing: .5px;
+  /*  text-decoration: none !important;*/
+}
+
+/* line 362, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.field2 {
+  text-align: center;
+}
+
+/* line 366, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.field-links a {
+  /*  height:37px;
+    width: 260px;*/
+  /*margin-top: 50px;*/
+  margin: 0 auto;
+  letter-spacing: .5px;
+  text-decoration: none;
+  color: #83A035;
+  /*text-align: center;*/
+}
+
+/* line 377, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#cancel-back {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #83A035 !important;
+}
+
+/* line 383, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#leave-blank {
+  height: 50%;
+}
+
+/* line 387, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.field#actions {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 13px;
+}
+
+/* line 393, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.input-field {
+  height: 34px;
+  width: 270px;
+  border-radius: 2px;
+  border: none;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+  padding-left: 15px;
+  font-size: 28px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* line 404, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.input-box {
+  height: 3em;
+  width: 95%;
+  padding-left: 3%;
+}
+
+/* line 410, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.input-longer-box {
+  height: 60px;
+  width: 246px;
+  margin-bottom: 10px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  border: none;
+  box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4);
+  padding-left: 14px;
+  padding-top: 7px;
+  margin-left: 3px;
+}
+
+/* line 423, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#prep-time {
+  height: 20px;
+}
+
+/* line 427, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.dishes {
+  margin: 0 auto;
+  padding-left: 200px;
+  padding-top: 30px;
+}
+
+/* line 433, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.add-dish {
+  text-align: right;
+  padding-right: 12%;
+  padding-top: 2%;
+}
+
+/* line 439, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.add-dish a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #637820;
+}
+
+/* line 445, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.white-bg-home {
+  border-top: 1%;
+  background-color: white;
+  /*position: absolute;*/
+  top: 150px;
+  /*  left: 100;
+    r`ight: 100;*/
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 6%;
+  margin: auto;
+  width: 70%;
+  list-style: none;
+  border-bottom: 15%;
+  padding-bottom: 6%;
+}
+
+/* line 461, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.white-bg {
+  border-top: 1%;
+  background-color: white;
+  /*position: absolute;*/
+  top: 150px;
+  /*  left: 100;
+    r`ight: 100;*/
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 0%;
+  margin: auto;
+  width: 70%;
+  list-style: none;
+  border-bottom: 15%;
+  padding-bottom: 8%;
+}
+
+/* line 477, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.white-bg ul {
+  list-style: none;
+}
+
+/* line 481, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.white-bg ul li {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  line-height: 1.8em;
+  padding-right: 30px;
+}
+
+/* line 488, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.login-title {
+  font-size: 2em;
+  padding-bottom: 1.5%;
+  padding-top: 30px;
+}
+
+/* line 494, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#loginField {
+  -webkit-appearance: none;
+  position: relative;
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  font-family: 'Cormorant Garamond', serif;
+  background-image: none;
+}
+
+/*#loginField input[type=text] {
+  height:200px !important;
+  box-sizing: border-box;
+}
+#loginField input[type=submit] {
+  width: 85%;
+  height: 60px;
+}*/
+/* line 512, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.input-field {
+  height: 2em;
+  width: 95%;
+  padding-left: 3%;
+  font-size: 1em;
+}
+
+/* line 519, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile-wrapper {
+  text-align: center;
+}
+
+/* line 523, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile {
+  margin: auto;
+  display: inline-block;
+  overflow: hidden;
+  min-width: 380px;
+}
+
+/* line 530, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile-username {
+  margin-top: 5px;
+  margin-left: 0px;
+}
+
+/* line 535, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile-pic {
+  float: left;
+  /*padding-right: 10px;*/
+  text-align: left;
+}
+
+/* line 541, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile-info {
+  float: right;
+  text-align: left;
+  margin-left: 25px;
+}
+
+/* line 547, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile-info-text {
+  font-size: 1.2em;
+  line-height: 2;
+  /*margin-left: 25px;*/
+}
+
+/* line 553, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile-info-text a {
+  text-decoration: none;
+  color: #637820;
+}
+
+/* line 558, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.profile-info-edit a {
+  text-decoration: none;
+  color: #637820;
+  /*  margin-left: 25px;*/
+  padding-top: 100px;
+  text-align: bottom;
+  display: block;
+  margin-top: 110px;
+  /*  padding-left:-100px !important;*/
+}
+
+/* line 570, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#profile-recipes {
+  padding-top: 0px;
+}
+
+/* line 574, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.chef-duration-left {
+  margin-left: 16%;
+}
+
+/* line 578, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.chef-duration-left a {
+  color: #637820;
+  text-decoration: none;
+}
+
+/* line 583, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.remember {
+  display: inline-block;
+  color: #707A7B;
+}
+
+/* line 588, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#submit-btn:hover {
+  background-color: #819639;
+}
+
+/* line 592, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#submit-btn {
+  height: 45px;
+  width: 100%;
+  background-color: #83A035;
+  color: white;
+  font-size: 18px;
+  /*  font-size: 1.2em;*/
+  padding: 3%;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  letter-spacing: .9px;
+  font-weight: lighter;
+}
+
+/* line 609, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#submit-btn:hover {
+  background-color: #819639;
+}
+
+/* line 613, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+#devise-sign-up {
+  text-align: center;
+  color: #83A035;
+  padding-top: 3px;
+  margin-bottom: 1px;
+  margin-top: 35px;
+}
+
+/* line 621, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.devise-links {
+  margin-top: 30px;
+  text-align: center;
+  /*font-weight: bold;*/
+  color: #83A035;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  letter-spacing: .05em;
+  font-weight: bolder;
+}
+
+/* line 632, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.devise-links a {
+  text-decoration: none;
+  padding-top: 0px;
+  margin-top: 0px;
+  /*margin: 0 auto;*/
+  color: #83A035;
+  font-weight: 800;
+  font-size: 1em;
+}
+
+/* line 642, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.devise-links a:hover {
+  color: #6F8528 !important;
+}
+
+/* line 646, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.devise-forgot {
+  color: #83A035;
+  padding-top: 0px;
+  margin: 0px;
+}
+
+/* line 657, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.alert {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #956D0F;
+  margin-top: 0px;
+}
+
+/* line 666, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.notice {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+
+/* line 673, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+a:hover {
+  background-color: transparent;
+  color: #4D5E15;
+}
+
+/* line 678, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.home-links {
+  line-height: 3em;
+}
+
+/* line 683, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.home-links a {
+  color: #596C1A;
+}
+
+/* line 687, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+a .home-links:hover {
+  color: #4D5E15;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* line 696, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.home {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: .5s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+/* line 714, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.content {
+  padding-top: 65px;
+}
+
+/* line 718, /Users/Youna/Documents/devbootcamp/phase3/team-projects/frais-project/Dishy/app/assets/stylesheets/application.scss */
+.space {
+  height: 20px;
+}
+
+/*.vote-link:hover {
+  transform:translate(0px,-10px);
+}*/
+/*
+a .vote-link:hover{
+  position: relative;
+  top: -5px;
+}
+
+
+#arugula-46:hover {
+  position: relative;
+  top: -2px;
+}*/
+/*a img:hover {
+  position: relative;
+  top: -3px;
+}*/
