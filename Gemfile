@@ -27,6 +27,11 @@ gem 'nested_scaffold'
 gem 'devise'
 gem 'simplecov', :require => false , :group => :test
 
+group :production do
+    gem 'pg'
+    gem 'rails_12factor'
+end
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
